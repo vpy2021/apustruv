@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F2EB"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignUp">
+
+
+    <include layout="@layout/custom_actionbar_signup"/>
+
+
+    <TextView
+        android:id="@+id/letGetStartedID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="LET'S GET STARTED!"
+        android:textColor="#2F4F4E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+       />
+
+    <TextView
+        android:id="@+id/createAccountID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/create_an_account_to_abc_to_get_all_feature"
+        android:textColor="#2F4F4E"
+        android:paddingLeft="40dp" />
+
+    <EditText
+        android:id="@+id/userNameID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@layout/custom_input_design"
+        android:drawableStart="@drawable/profile"
+
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#8E8E8E"
+        android:visibility="visible"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountID"
+        android:drawableLeft="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/emailID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@layout/custom_input_design"
+        android:drawableStart="@drawable/mail"
+        android:drawableLeft="@drawable/mail"
+        android:ems="10"
+        android:hint="Email/Mobile Number"
+        android:paddingLeft="9dp"
+        android:textColorHint="#8E8E8E"
+        android:visibility="visible"
+        android:drawablePadding="10dp" />
+
+    <EditText
+        android:id="@+id/passwordID"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@layout/custom_input_design"
+        android:drawableStart="@drawable/password"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="9dp"
+        android:textColorHint="#8E8E8E"
+        android:drawablePadding="10dp"
+       />
+
+    <EditText
+        android:id="@+id/confirmPasswordID"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@layout/custom_input_design"
+        android:drawableStart="@drawable/password"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="9dp"
+        android:textColorHint="#8E8E8E" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="37dp"
+        android:background="@layout/rounded_button"
+        android:textAllCaps="false"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Already have an account? Log In" />
+</LinearLayout>

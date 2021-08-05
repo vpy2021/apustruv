@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F2EB"
+    android:orientation="vertical"
+    tools:context=".SignUp2">
+
+
+<include layout="@layout/custom_actionbar_signup2"/>
+
+    <TextView
+        android:id="@+id/letGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="LET'S GET STARTED!"
+        android:textColor="#2F4F4E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:paddingLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/create_an_account_to_abc_to_get_all_feature"
+        android:textColor="#2F4F4E" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImageView"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/profileup"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center"
+        app:civ_border_color="#FF000000"
+        tools:ignore="MissingClass" />
+
+
+    <EditText
+        android:id="@+id/nickNameID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@layout/custom_input_design"
+        android:drawableStart="@drawable/profile"
+        android:ems="10"
+        android:hint="Nick Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#8E8E8E"
+        android:visibility="visible"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountID"
+        android:drawableLeft="@drawable/profile" />
+
+    <EditText
+        android:id="@+id/ageID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="9dp"
+        android:drawablePadding="10dp"
+        android:background="@layout/custom_input_design"
+        android:drawableStart="@drawable/birthday"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        android:textColorHint="#8E8E8E"
+        android:visibility="visible"
+        android:layout_marginHorizontal="40dp"
+        android:drawableLeft="@drawable/birthday"/>
+
+    <EditText
+        android:id="@+id/aboutID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@layout/custom_input_design"
+        android:drawableStart="@drawable/profile"
+        android:ems="10"
+        android:hint="About"
+        android:inputType="textPersonName"
+        android:textColorHint="#8E8E8E"
+        android:visibility="visible"
+        android:layout_marginHorizontal="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountID"
+        android:drawableLeft="@drawable/profile" />
+
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="37dp"
+        android:textAllCaps="false"
+        android:background="@layout/rounded_button"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
