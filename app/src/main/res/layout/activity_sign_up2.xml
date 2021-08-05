@@ -105,7 +105,7 @@
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="37dp"
         android:textAllCaps="false"
-        android:background="@layout/rounded_button"
+        android:background="@drawable/round_button"
         android:text="Get Started"
         android:textColor="@color/white"
         android:textSize="16sp"

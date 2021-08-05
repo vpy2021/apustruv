@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F2EB"
+    android:orientation="vertical"
+    tools:context=".AccountSetting">
+
+    <include layout="@layout/custom_actionbar_signup"/>
+
+    <TextView
+        android:id="@+id/letGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="30dp"
+        android:text="Account Setting"
+
+        android:textColor="#2F4F4E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editProfileID"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#F5F2EB"
+        android:drawableStart="@drawable/pv"
+        android:drawableLeft="@drawable/pv"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Edit Profile"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:background="#707070" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/privateID"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="#F5F2EB"
+            android:drawableStart="@drawable/pn"
+            android:drawableLeft="@drawable/pn"
+            android:layout_marginLeft="40dp"
+            android:ems="10"
+            android:drawablePadding="10dp"
+            android:enabled="false"
+            android:hint="Private Account"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:minHeight="48dp"
+            android:paddingLeft="55dp"
+            android:textOff="off"
+            android:textOn="on"
+            android:thumb="@drawable/circular_thumb"
+            app:showText="true"
+            app:track="@drawable/track" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:background="#707070" />
+
+
+    <EditText
+        android:id="@+id/changeID"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#F5F2EB"
+        android:drawableStart="@drawable/twopeople"
+        android:drawableLeft="@drawable/twopeople"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Change Password"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:background="#707070" />
+
+</LinearLayout>

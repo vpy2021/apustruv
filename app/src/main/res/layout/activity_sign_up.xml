@@ -109,7 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="37dp"
-        android:background="@layout/rounded_button"
+        android:background="@drawable/round_button"
         android:textAllCaps="false"
         android:text="Next"
         android:textColor="@color/white"
