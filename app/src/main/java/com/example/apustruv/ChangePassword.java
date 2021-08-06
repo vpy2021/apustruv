@@ -19,11 +19,10 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-
 public class ChangePassword extends AppCompatActivity {
 
-   EditText oldPassword, newPassword, confirmPassword;
-   Button submitBtn;
+    EditText oldPassword, newPassword, confirmPassword;
+    Button submitBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +44,9 @@ public class ChangePassword extends AppCompatActivity {
         newPassword = (EditText) findViewById(R.id.newPasswordID);
         confirmPassword = (EditText) findViewById(R.id.confirmPasswordID);
 
-        String oldPass = oldPassword.getText().toString().trim();
-        String newPass = newPassword.getText().toString().trim();
-        String confirmPass = confirmPassword.getText().toString().trim();
+        final String oldPass = oldPassword.getText().toString().trim();
+        final String newPass = newPassword.getText().toString().trim();
+        final String confirmPass = confirmPassword.getText().toString().trim();
 
 
         RequestQueue requestQueue;
