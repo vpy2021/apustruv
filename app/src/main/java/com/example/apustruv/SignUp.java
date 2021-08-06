@@ -47,7 +47,7 @@ public class SignUp extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // insertData();
+                // insertData();
                 sendPostRequest();
             }
         });
@@ -61,10 +61,10 @@ public class SignUp extends AppCompatActivity {
         password = (EditText) findViewById(R.id.passwordID);
         confirmPassword = (EditText) findViewById(R.id.confirmPasswordID);
 
-        String userName1 = userName.getText().toString().trim();
-        String emailID1 = emailID.getText().toString().trim();
-        String password1 = password.getText().toString().trim();
-        String confirmPassword1 = confirmPassword.getText().toString().trim();
+        final String userName1 = userName.getText().toString().trim();
+        final String emailID1 = emailID.getText().toString().trim();
+        final String password1 = password.getText().toString().trim();
+        final String confirmPassword1 = confirmPassword.getText().toString().trim();
 
         RequestQueue MyRequestQueue = Volley.newRequestQueue(this);
         String url = "http://staging.ajath.com/forumias/api/v1/userSignupNew";

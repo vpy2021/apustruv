@@ -144,7 +144,7 @@ public class SignUp2 extends AppCompatActivity {
             takePictureFromCamera();
 
         } else {
- /// To check third case
+            /// To check third case
             if (!ActivityCompat.shouldShowRequestPermissionRationale(SignUp2.this, Manifest.permission.CAMERA)) {
                 Log.e("TAG", "onRequestPermissionsResult: " + "");
                 Toast.makeText(SignUp2.this, "Permission permanent denied", Toast.LENGTH_SHORT).show();
@@ -193,9 +193,9 @@ public class SignUp2 extends AppCompatActivity {
         age = (EditText) findViewById(R.id.ageID);
         about = (EditText) findViewById(R.id.aboutID);
 
-        String nickName1 = nickName.getText().toString().trim();
-        String age1 = age.getText().toString();
-        String about1 = about.getText().toString().trim();
+        final String nickName1 = nickName.getText().toString().trim();
+        final String age1 = age.getText().toString();
+        final String about1 = about.getText().toString().trim();
 
         RequestQueue requestQueue;
         requestQueue = Volley.newRequestQueue(this);

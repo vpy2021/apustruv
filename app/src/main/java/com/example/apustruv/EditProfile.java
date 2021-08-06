@@ -171,12 +171,12 @@ public class EditProfile extends AppCompatActivity {
 
         addPhoto = (ImageView) findViewById(R.id.addPhoto);
 
-        String name1 = name.getText().toString().trim();
-        String userName1 = userName.getText().toString().trim();
-        String about1 = about.getText().toString().trim();
-        String DOB = dateOfBirth.getText().toString().trim();
-        String mobileNumber1 = mobileNumber.getText().toString().trim();
-        String emailID1 = emailID.getText().toString().trim();
+        final String name1 = name.getText().toString().trim();
+        final String userName1 = userName.getText().toString().trim();
+        final String about1 = about.getText().toString().trim();
+        final String DOB = dateOfBirth.getText().toString().trim();
+        final String mobileNumber1 = mobileNumber.getText().toString().trim();
+        final String emailID1 = emailID.getText().toString().trim();
 
         RequestQueue requestQueue;
         requestQueue = Volley.newRequestQueue(this);
