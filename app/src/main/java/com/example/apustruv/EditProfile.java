@@ -40,15 +40,23 @@ public class EditProfile extends AppCompatActivity {
     ImageView addPhoto;
     Button submitButton;
     AlertDialog alertDialogProfile;
+    ImageView onBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
 
-        submitButton = (Button)findViewById(R.id.submitButton);
+        submitButton = findViewById(R.id.submitButton);
+        onBack = findViewById(R.id.backIcon);
+        addPhoto =  findViewById(R.id.addPhoto);
 
-        addPhoto = (ImageView) findViewById(R.id.addPhoto);
+        onBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         addPhoto.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -6,6 +6,7 @@
 <ImageView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:id="@+id/backIcon"
     android:src="@drawable/arr"
     android:padding="15dp"/>
 

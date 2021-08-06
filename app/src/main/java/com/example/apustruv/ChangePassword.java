@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,13 +24,24 @@ public class ChangePassword extends AppCompatActivity {
 
     EditText oldPassword, newPassword, confirmPassword;
     Button submitBtn;
+    ImageView backIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password);
 
-        submitBtn = (Button)findViewById(R.id.btn_submit);
+     //   getActionBar().setDisplayHomeAsUpEnabled(true);
+
+        backIcon = findViewById(R.id.backIcon);
+        submitBtn = findViewById(R.id.btn_submit);
+
+        backIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,4 +88,5 @@ public class ChangePassword extends AppCompatActivity {
         };
         requestQueue.add(jsonObjectRequest);
     }
+
 }

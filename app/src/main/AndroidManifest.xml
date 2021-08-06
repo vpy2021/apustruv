@@ -15,12 +15,13 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".EditProfile"></activity>
         <activity android:name=".LikeActivity" />
-        <activity android:name=".ChangePassword" />
-        <activity android:name=".AccountSetting" />
+        <activity android:name=".ChangePassword"/>
         <activity android:name=".SignUp2" />
         <activity android:name=".SignUp" />
-        <activity android:name=".LoginActivity" />
         <activity android:name=".Search_location">
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".AccountSetting">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
