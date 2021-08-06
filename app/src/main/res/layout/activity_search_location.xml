@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Search_location"
+    android:background="#F5F2EB">
+    <include layout="@layout/custom_location_layout"
+        tools:ignore="ResourceCycle" />
+
+    <SearchView
+        android:id="@+id/sv_fruit_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:queryHint="Search a Location"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/concept"
+
+        >
+
+    </SearchView>
+
+    <ListView
+        android:id="@+id/lv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        />
+
+</LinearLayout>
