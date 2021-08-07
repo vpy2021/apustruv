@@ -35,7 +35,7 @@ public class HelpCenter extends AppCompatActivity {
         setContentView(R.layout.activity_help_center);
 
         submtBtn = findViewById(R.id.submitButton);
-
+/// This is for demo
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
 
         awesomeValidation.addValidation(this,R.id.helpCenterInputText, RegexTemplate.NOT_EMPTY
