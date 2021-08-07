@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 
 import org.json.JSONObject;
 
@@ -41,6 +45,7 @@ public class EditProfile extends AppCompatActivity {
     Button submitButton;
     AlertDialog alertDialogProfile;
     ImageView onBack;
+    AwesomeValidation awesomeValidation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +55,28 @@ public class EditProfile extends AppCompatActivity {
         submitButton = findViewById(R.id.submitButton);
         onBack = findViewById(R.id.backIcon);
         addPhoto =  findViewById(R.id.addPhoto);
+
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+        name = (EditText) findViewById(R.id.nameID);
+        userName = (EditText) findViewById(R.id.userNameID);
+        about = (EditText) findViewById(R.id.aboutProfileID);
+        dateOfBirth = (EditText) findViewById(R.id.ageID);
+        mobileNumber = (EditText) findViewById(R.id.mobileID);
+        emailID = (EditText) findViewById(R.id.emailID);
+
+
+        // validation check
+
+        awesomeValidation.addValidation(this,R.id.nameID, RegexTemplate.NOT_EMPTY
+                ,R.string.invalidName);
+        awesomeValidation.addValidation(this,R.id.userNameID, RegexTemplate.NOT_EMPTY
+                ,R.string.invalidUserName);
+        awesomeValidation.addValidation(this,R.id.aboutProfileID, RegexTemplate.NOT_EMPTY
+                ,R.string.invalidUserName);
+        awesomeValidation.addValidation(this,R.id.ageID, RegexTemplate.NOT_EMPTY
+                ,R.string.invalidAge);
+        awesomeValidation.addValidation(this,R.id.mobileID,"[5-9]{1}[0-9]{9}$",R.string.invalidNumber);
+        awesomeValidation.addValidation(this,R.id.emailID, Patterns.EMAIL_ADDRESS, R.string.invalidEmailID);
 
         onBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,9 +95,12 @@ public class EditProfile extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                editProfileData();
+                if (awesomeValidation.validate()){
+                    editProfileData();
+                }
             }
         });
+
 
     }
 
@@ -170,12 +200,7 @@ public class EditProfile extends AppCompatActivity {
     }
 
     private void editProfileData() {
-        name = (EditText) findViewById(R.id.nameID);
-        userName = (EditText) findViewById(R.id.userNameID);
-        about = (EditText) findViewById(R.id.aboutID);
-        dateOfBirth = (EditText) findViewById(R.id.ageID);
-        mobileNumber = (EditText) findViewById(R.id.mobileID);
-        emailID = (EditText) findViewById(R.id.emailID);
+
 
         addPhoto = (ImageView) findViewById(R.id.addPhoto);
 
