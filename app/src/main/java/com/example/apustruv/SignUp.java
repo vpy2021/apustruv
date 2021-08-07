@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,9 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.example.apustruv.R;
 
 import org.json.JSONArray;
@@ -37,6 +41,7 @@ public class SignUp extends AppCompatActivity {
 
     EditText userName, emailID, password, confirmPassword;
     Button nextButton;
+    AwesomeValidation awesomeValidation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,22 +49,33 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
         nextButton = (Button) findViewById(R.id.nextButton);
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // insertData();
-                sendPostRequest();
-            }
-        });
-
-    }
-
-    private void sendPostRequest() {
-
         userName = (EditText) findViewById(R.id.userNameID);
         emailID = (EditText) findViewById(R.id.emailID);
         password = (EditText) findViewById(R.id.passwordID);
         confirmPassword = (EditText) findViewById(R.id.confirmPasswordID);
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        awesomeValidation.addValidation(this,R.id.userNameID, RegexTemplate.NOT_EMPTY
+                ,R.string.invalidUserName);
+        awesomeValidation.addValidation(this,R.id.emailID, Patterns.EMAIL_ADDRESS, R.string.invalidEmailID);
+        awesomeValidation.addValidation(this,R.id.passwordID,".{6}",R.string.invalidPassword);
+        awesomeValidation.addValidation(this,R.id.confirmPasswordID,R.id.newPasswordID,R.string.invalidConfirmPassword);
+
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(awesomeValidation.validate()){
+                    sendPostRequest();
+                }
+
+            }
+        });
+
+    }
+    private void sendPostRequest() {
+
+
 
         final String userName1 = userName.getText().toString().trim();
         final String emailID1 = emailID.getText().toString().trim();

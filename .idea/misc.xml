@@ -9,10 +9,11 @@
         <entry key="..\:/apustrov/app/src/main/res/drawable/round_button.xml" value="0.18703703703703703" />
         <entry key="..\:/apustrov/app/src/main/res/drawable/track.xml" value="0.2203125" />
         <entry key="..\:/apustrov/app/src/main/res/layout/activity_account_setting.xml" value="0.25" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_change_password.xml" value="0.1" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/activity_change_password.xml" value="0.18" />
         <entry key="..\:/apustrov/app/src/main/res/layout/activity_edit_profile.xml" value="0.18" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_sign_up.xml" value="0.14764492753623187" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_sign_up2.xml" value="0.14764492753623187" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/activity_help_center.xml" value="0.22" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/activity_sign_up.xml" value="0.18" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/activity_sign_up2.xml" value="0.18" />
         <entry key="..\:/apustrov/app/src/main/res/layout/circular_thumb.xml" value="0.14764492753623187" />
         <entry key="..\:/apustrov/app/src/main/res/layout/custom_actionbar_signup.xml" value="0.14764492753623187" />
         <entry key="..\:/apustrov/app/src/main/res/layout/custom_actionbar_signup2.xml" value="0.14764492753623187" />

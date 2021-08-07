@@ -31,6 +31,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.example.apustruv.R;
 
 import org.json.JSONObject;
@@ -45,6 +48,7 @@ public class SignUp2 extends AppCompatActivity {
     ImageView imageView, profileImageView;
     Button getStartedBtn;
     AlertDialog alertDialogProfile;
+    AwesomeValidation awesomeValidation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +58,16 @@ public class SignUp2 extends AppCompatActivity {
 
         getStartedBtn = (Button) findViewById(R.id.getStartedButton);
         profileImageView = (ImageView) findViewById(R.id.profileImageView);
+        nickName = (EditText) findViewById(R.id.nickNameID);
+        age = (EditText) findViewById(R.id.ageID);
+        about = (EditText) findViewById(R.id.aboutID);
+
+
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        awesomeValidation.addValidation(this,R.id.nickNameID, RegexTemplate.NOT_EMPTY,R.string.invalidNickName);
+        awesomeValidation.addValidation(this,R.id.aboutID, RegexTemplate.NOT_EMPTY,R.string.invalidAbout);
+        awesomeValidation.addValidation(this,R.id.ageID, RegexTemplate.NOT_EMPTY,R.string.invalidAge);
 
         // click Listner for Profile Photo
 
@@ -69,7 +83,9 @@ public class SignUp2 extends AppCompatActivity {
         getStartedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                updateData();
+              if(awesomeValidation.validate()){
+                  updateData();
+              }
             }
         });
     }
@@ -189,9 +205,7 @@ public class SignUp2 extends AppCompatActivity {
 
     private void updateData() {
 
-        nickName = (EditText) findViewById(R.id.nickNameID);
-        age = (EditText) findViewById(R.id.ageID);
-        about = (EditText) findViewById(R.id.aboutID);
+
 
         final String nickName1 = nickName.getText().toString().trim();
         final String age1 = age.getText().toString();
@@ -216,8 +230,8 @@ public class SignUp2 extends AppCompatActivity {
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
                 params.put("userName", nickName1);
-                params.put("userName", age1);
-                params.put("userName", about1);
+                params.put("Age", age1);
+                params.put("About", about1);
 
                 return params;
             }

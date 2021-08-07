@@ -15,14 +15,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:paddingLeft="30dp"
+        android:paddingLeft="40dp"
         android:text="Account Setting"
-
         android:textColor="#2F4F4E"
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <EditText
+    <TextView
         android:id="@+id/editProfileID"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
@@ -33,10 +32,11 @@
         android:drawableLeft="@drawable/pv"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:enabled="false"
-        android:hint="Edit Profile"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:text="Edit Profiile"
         android:inputType="textPersonName"
-        android:textColorHint="@color/black"
+        android:textColor="#000000"
         android:visibility="visible" />
 
     <TextView
@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <EditText
+        <TextView
             android:id="@+id/privateID"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -60,19 +60,22 @@
             android:drawableLeft="@drawable/pn"
             android:layout_marginLeft="40dp"
             android:ems="10"
+            android:textSize="20dp"
             android:drawablePadding="10dp"
             android:enabled="false"
-            android:hint="Private Account"
+            android:text="Private Account"
+            android:textColor="#000000"
             android:inputType="textPersonName"
-            android:textColorHint="@color/black"
+            android:gravity="center_vertical"
             android:visibility="visible" />
 
         <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/toggleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
             android:minHeight="48dp"
-            android:paddingLeft="55dp"
+            android:paddingLeft="40dp"
             android:textOff="off"
             android:textOn="on"
             android:thumb="@drawable/circular_thumb"
@@ -89,21 +92,22 @@
         android:background="#707070" />
 
 
-    <EditText
+    <TextView
         android:id="@+id/changeID"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="20dp"
         android:background="#F5F2EB"
-        android:drawableStart="@drawable/twopeople"
-        android:drawableLeft="@drawable/twopeople"
+        android:drawableStart="@drawable/pv"
+        android:drawableLeft="@drawable/pv"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:enabled="false"
-        android:hint="Change Password"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        android:text="Change Password"
         android:inputType="textPersonName"
-        android:textColorHint="@color/black"
+        android:textColor="#000000"
         android:visibility="visible" />
 
     <TextView

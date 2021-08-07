@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">apustruv</string>
     <string name="create_an_account_to_abc_to_get_all_feature">Create_an_account_to_abc_to_get_all_feature</string>
+    <string name="invalid">Please Enter your problem or go back</string>
+    <string name="invalidPassword">Please Enter 6 digit password</string>
+    <string name="invalidConfirmPassword">Password Not Matched</string>
+    <string name="passwordincorrect">Password Not Matched</string>
+    <string name="invalidNumber">Please Enter Correct Mobile Number</string>
+    <string name="invalidEmailID">Please Enter Correct Email</string>
+    <string name="invalidName">Please Enter Your Name</string>
+    <string name="invalidUserName">Enter Your UserName</string>
+    <string name="invalidAbout">Enter Something About Yourself</string>
+    <string name="invalidAge">Enter Your Age</string>
+    <string name="invalidNickName">Enter Your Nick Name</string>
 </resources>
