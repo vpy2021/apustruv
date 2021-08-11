@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Comment_section">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="1"
+        android:textSize="16dp"
+        android:scrollbars="vertical"
+        android:layout_margin="10dp"
+        android:text="lorem lorem lorem lorem lore"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/showMoreCommentID"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="1"
+        android:scrollbars="vertical"
+        android:layout_margin="10dp"
+        android:text="Show more replies"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <include layout="@layout/custom_comment"/>
+
+    <EditText
+        android:id="@+id/messageID"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@layout/custom_input_design"
+        android:drawableStart="@drawable/emoji"
+        android:drawableLeft="@drawable/emoji"
+        android:drawableEnd="@drawable/send"
+        android:drawableRight="@drawable/send"
+        android:ems="10"
+        android:textColorHint="#8E8E8E"
+        android:visibility="visible"
+        tools:ignore="SpeakableTextPresentCheck" />
+</LinearLayout>

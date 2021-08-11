@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/statusImageHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profileup"
+                android:layout_marginLeft="5dp"
+                app:civ_border_width="1dp"
+                android:layout_gravity="center"
+                app:civ_border_color="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serndipity in love"
+                android:id="@+id/profileNameID"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/followID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="Follow"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/reportDotID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="..."
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <com.google.android.material.imageview.ShapeableImageView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:adjustViewBounds="true"
+              android:id="@+id/postImageID"
+              android:background="#F5F2EB"
+              android:layout_marginHorizontal="5dp"
+              android:scaleType="fitXY"
+              android:src="@drawable/custom_image_design"
+              app:shapeAppearanceOverlay="@style/imageViewRound"/>
+      </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/likeInc"
+                android:textColor="@color/black"
+                android:text="1,026"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/notesID"
+                android:textColor="@color/black"
+                android:text="notes"/>
+
+            <ImageView
+                android:id="@+id/commentIconID"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/cmt" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/share"
+                android:id="@+id/shareID"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/refresh"
+                android:id="@+id/refreshID"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/clickLike"
+                android:src="@drawable/hrt"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+
+        </LinearLayout>
+        <include layout="@layout/activity_comment_section_layout"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
