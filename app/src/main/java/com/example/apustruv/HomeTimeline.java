@@ -1,6 +1,8 @@
 package com.example.apustruv;
 
+
 import androidx.annotation.RequiresApi;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,6 +13,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.net.Uri;
+
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +21,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -35,8 +43,10 @@ import com.example.apustruv.AdapterClass.HomeStatusAdapter;
 import com.example.apustruv.FetchingData.CommentData;
 import com.example.apustruv.FetchingData.HomePostData;
 import com.example.apustruv.FetchingData.HomeStatusData;
+
 import com.example.apustruv.Interface.OnItemClickListener;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -47,6 +57,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+
 
 import eightbitlab.com.blurview.BlurView;
 import eightbitlab.com.blurview.RenderScriptBlur;
@@ -61,6 +72,13 @@ public class HomeTimeline extends AppCompatActivity implements OnItemClickListen
     FloatingActionsMenu floatingActionsMenu;
    BlurView blurView;
 
+public class HomeTimeline extends AppCompatActivity {
+
+    RecyclerView statusRecyler, postRecycler, commentRecycler;
+    // ImageView commentIcon;
+    EditText messageComment;
+
+
     List<Integer> list = new ArrayList<>(); /// In place of Integer I use HomePostData class
     List<Integer> data = new ArrayList<>(); // In place of Integer I use HomeStatusData class
     List<CommentData> commentData = new ArrayList<>();
@@ -72,11 +90,18 @@ public class HomeTimeline extends AppCompatActivity implements OnItemClickListen
         setContentView(R.layout.activity_home_timeline);
 
         messageComment = findViewById(R.id.messageID);
+
         linearLayout = findViewById(R.id.homePageLayoutID);
         floatingActionsMenu = findViewById(R.id.menuFAMID);
         blurView = findViewById(R.id.blurLayoutID);
 
         commentIcon = findViewById(R.id.shareID);
+
+
+        //     commentIcon = findViewById(R.id.shareID);
+//        @SuppressLint("ResourceType")
+//        LinearLayout linearLayout = findViewById(R.layout.activity_comment_section_layout);
+
 
         list.add(R.drawable.dummyimage);
         list.add(R.drawable.dummyimage);
@@ -93,6 +118,7 @@ public class HomeTimeline extends AppCompatActivity implements OnItemClickListen
         data.add(R.drawable.download);
 
         //   fetchingData();
+
        // postCommentMessage();
      floatingActionsMenu.setOnClickListener(new View.OnClickListener() {
 
@@ -115,15 +141,39 @@ public class HomeTimeline extends AppCompatActivity implements OnItemClickListen
 
         statusRecyler = findViewById(R.id.homeStatusRecycler);
         statusRecyler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true));
+
+      //  postCommentMessage();
+
+//        commentIcon.setOnClickListener(new View.OnClickListener() {
+//            @SuppressLint("ResourceType")
+//            @Override
+//            public void onClick(View view) {
+//                if (linearLayout.getVisibility() == View.GONE){
+//                    linearLayout.setVisibility(View.VISIBLE);
+//                }
+//            }
+//        });
+
+        statusRecyler = findViewById(R.id.homeStatusRecycler);
+        statusRecyler.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, true));
+
         statusRecyler.setAdapter(new HomeStatusAdapter(getApplicationContext(), list));
 
         postRecycler = findViewById(R.id.homeRecycler);
         postRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+
         postRecycler.setAdapter(new HomePostAdapter(getApplicationContext(), data,this));
 
        /* commentRecycler = findViewById(R.id.commentSectionRecyclerViewID);
         commentRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         commentRecycler.setAdapter(new CommentAdapter(getApplicationContext(), commentData));*/
+
+        postRecycler.setAdapter(new HomePostAdapter(getApplicationContext(), data));
+
+        commentRecycler = findViewById(R.id.commentSectionRecyclerViewID);
+        commentRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        commentRecycler.setAdapter(new CommentAdapter(getApplicationContext(), commentData));
+
 
     }
 
@@ -188,6 +238,7 @@ public class HomeTimeline extends AppCompatActivity implements OnItemClickListen
 //            }
 //        });
 //        requestQueue.add(jsonArrayRequest);
+
 //}
 
 
@@ -228,5 +279,37 @@ public class HomeTimeline extends AppCompatActivity implements OnItemClickListen
    //  Log.d("Ramvilas" ,position+" "+data);
            chtMsg = data;
     }
+
+
+//    private void postCommentMessage() {
+//
+//        String message = messageComment.getText().toString();
+//
+//        RequestQueue requestQueue;
+//        requestQueue = Volley.newRequestQueue(this);
+//
+//        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, "http://www.json-generator.com/api/json/get/cdYLcSmAZe?indent=2",
+//                null, new Response.Listener<JSONObject>() {
+//            @Override
+//            public void onResponse(JSONObject response) {
+//
+//
+//            }
+//        }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_LONG).show();
+//            }
+//        }) {
+//            protected Map<String, String> getParams() {
+//                Map<String, String> params = new HashMap<String, String>();
+//                params.put("commentMessage", message);
+//
+//                return params;
+//            }
+//        };
+//
+//        requestQueue.add(jsonObjectRequest);
+
 
 }

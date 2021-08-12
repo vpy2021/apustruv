@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:color="#BB000000"
+    android:background="#F5F2EB">
+
+
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:padding="5sp"
+        android:background="#F5F2EB"
+        android:src="@drawable/logo2" />
+
+
+
+
+</LinearLayout>
+
+
