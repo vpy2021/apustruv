@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.apustruv">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -24,11 +25,16 @@
             android:exported="true" />
         <activity android:name=".LikeActivity" />
         <activity android:name=".ChangePassword" />
+        <activity android:name=".AccountSetting" />
         <activity android:name=".HelpCenter" />
         <activity android:name=".Search_location" />
         <activity android:name=".SignUp2" />
+        <activity android:name=".Walkthrough" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Addtag" />
+        <activity android:name=".BottomNavbar">
         <activity android:name=".AccountSetting" />
-        <activity android:name=".LoginActivity" />
         <activity android:name=".HomeTimeline">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

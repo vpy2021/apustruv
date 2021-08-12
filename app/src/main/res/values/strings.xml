@@ -12,4 +12,8 @@
     <string name="invalidAbout">Enter Something About Yourself</string>
     <string name="invalidAge">Enter Your Age</string>
     <string name="invalidNickName">Enter Your Nick Name</string>
+    <string name="dashboard">dashboard</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
