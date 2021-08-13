@@ -46,7 +46,9 @@ import com.example.apustruv.FetchingData.HomePostData;
 import com.example.apustruv.FetchingData.HomeStatusData;
 
 import com.example.apustruv.Interface.OnItemClickListener;
+
 import com.getbase.floatingactionbutton.FloatingActionButton;
+
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
 
@@ -73,8 +75,10 @@ public class HomeTimeline extends AppCompatActivity implements OnItemClickListen
     String chtMsg;
     LinearLayout linearLayout;
     FloatingActionsMenu floatingActionsMenu;
+
     BlurView blurView;
     FloatingActionButton candleABtn,textDesignFAB,moviesFAB,cameraFAB,videoFAB,locationFAB,musicFAB,textFAB;
+
 
 public class HomeTimeline extends AppCompatActivity {
 
@@ -98,6 +102,7 @@ public class HomeTimeline extends AppCompatActivity {
         linearLayout = findViewById(R.id.homePageLayoutID);
         floatingActionsMenu = findViewById(R.id.menuFAMID);
         blurView = findViewById(R.id.blurLayoutID);
+
         candleABtn = findViewById(R.id.candleID);
         textDesignFAB = findViewById(R.id.textDesignFABID);
         moviesFAB = findViewById(R.id.moviesFABID);
@@ -106,6 +111,7 @@ public class HomeTimeline extends AppCompatActivity {
         musicFAB = findViewById(R.id.musicFABID);
         textFAB = findViewById(R.id.textFABID);
         videoFAB = findViewById(R.id.videoFABID);
+
 
         commentIcon = findViewById(R.id.shareID);
 
@@ -132,6 +138,7 @@ public class HomeTimeline extends AppCompatActivity {
         //   fetchingData();
 
        // postCommentMessage();
+
         candleABtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -210,6 +217,24 @@ public class HomeTimeline extends AppCompatActivity {
 //                     .setHasFixedTransformationMatrix(true);
 //         }
 //     });
+
+     floatingActionsMenu.setOnClickListener(new View.OnClickListener() {
+
+         @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
+         @Override
+         public void onClick(View view) {
+                float radius = 22f;
+                View decorView = getWindow().getDecorView();
+             ViewGroup  rootView = decorView.findViewById(android.R.id.content);
+             Drawable windowsBackground = decorView.getBackground();
+
+             blurView.setupWith(rootView)
+                   //  .setFrameClearDrawable(windowsBackground)
+                     .setBlurAlgorithm(new RenderScriptBlur(getApplicationContext()))
+                     .setBlurRadius(radius)
+                     .setHasFixedTransformationMatrix(true);
+         }
+
 
 
         statusRecyler = findViewById(R.id.homeStatusRecycler);
@@ -314,7 +339,17 @@ public class HomeTimeline extends AppCompatActivity {
 
 //}
 
+
     private void postCommentMessage() {
+
+
+
+
+    private void postCommentMessage() {
+
+
+
+
 
         RequestQueue requestQueue;
         requestQueue = Volley.newRequestQueue(this);
