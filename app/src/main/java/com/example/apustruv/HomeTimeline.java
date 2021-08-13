@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.annotation.SuppressLint;
 import android.app.DownloadManager;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.net.Uri;
@@ -45,6 +46,7 @@ import com.example.apustruv.FetchingData.HomePostData;
 import com.example.apustruv.FetchingData.HomeStatusData;
 
 import com.example.apustruv.Interface.OnItemClickListener;
+import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
 
@@ -53,6 +55,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -70,7 +73,8 @@ public class HomeTimeline extends AppCompatActivity implements OnItemClickListen
     String chtMsg;
     LinearLayout linearLayout;
     FloatingActionsMenu floatingActionsMenu;
-   BlurView blurView;
+    BlurView blurView;
+    FloatingActionButton candleABtn,textDesignFAB,moviesFAB,cameraFAB,videoFAB,locationFAB,musicFAB,textFAB;
 
 public class HomeTimeline extends AppCompatActivity {
 
@@ -94,6 +98,14 @@ public class HomeTimeline extends AppCompatActivity {
         linearLayout = findViewById(R.id.homePageLayoutID);
         floatingActionsMenu = findViewById(R.id.menuFAMID);
         blurView = findViewById(R.id.blurLayoutID);
+        candleABtn = findViewById(R.id.candleID);
+        textDesignFAB = findViewById(R.id.textDesignFABID);
+        moviesFAB = findViewById(R.id.moviesFABID);
+        cameraFAB = findViewById(R.id.cameraFABID);
+        locationFAB = findViewById(R.id.locatioFABID);
+        musicFAB = findViewById(R.id.musicFABID);
+        textFAB = findViewById(R.id.textFABID);
+        videoFAB = findViewById(R.id.videoFABID);
 
         commentIcon = findViewById(R.id.shareID);
 
@@ -120,23 +132,84 @@ public class HomeTimeline extends AppCompatActivity {
         //   fetchingData();
 
        // postCommentMessage();
-     floatingActionsMenu.setOnClickListener(new View.OnClickListener() {
+        candleABtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Calendar c = Calendar.getInstance();
+                int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
+                if(timeOfDay >= 0 && timeOfDay < 12){
+                    Toast.makeText(getApplicationContext(),"Good Morning",Toast.LENGTH_LONG).show();
+                }else if(timeOfDay >= 12 && timeOfDay < 16){
+                    Toast.makeText(getApplicationContext(),"Good Afternoon",Toast.LENGTH_LONG).show();
+                }else if(timeOfDay >=16 && timeOfDay < 21){
+                    Toast.makeText(getApplicationContext(),"Good Evening",Toast.LENGTH_LONG).show();
+                }else if(timeOfDay >= 21 && timeOfDay < 24){
+                    Toast.makeText(getApplicationContext(),"Good night",Toast.LENGTH_LONG).show();
+                }
 
-         @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
-         @Override
-         public void onClick(View view) {
-                float radius = 22f;
-                View decorView = getWindow().getDecorView();
-             ViewGroup  rootView = decorView.findViewById(android.R.id.content);
-             Drawable windowsBackground = decorView.getBackground();
+            }
+        });
+        textDesignFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"WOW this is for post layout",Toast.LENGTH_LONG).show();
+            }
+        });
+        moviesFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Wow this movies for you",Toast.LENGTH_LONG).show();
+            }
+        });
+        cameraFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Camera open",Toast.LENGTH_LONG).show();
+            }
+        });
+        videoFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Video start recorded",Toast.LENGTH_LONG).show();
+            }
+        });
+        locationFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Location serach for your",Toast.LENGTH_LONG).show();
+            }
+        });
+        musicFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"music start",Toast.LENGTH_LONG).show();
+            }
+        });
+        textFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"This text for only write something",Toast.LENGTH_LONG).show();
+            }
+        });
 
-             blurView.setupWith(rootView)
-                   //  .setFrameClearDrawable(windowsBackground)
-                     .setBlurAlgorithm(new RenderScriptBlur(getApplicationContext()))
-                     .setBlurRadius(radius)
-                     .setHasFixedTransformationMatrix(true);
-         }
-     });
+//     floatingActionsMenu.setOnClickListener(new View.OnClickListener() {
+//
+//         @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
+//         @Override
+//         public void onClick(View view) {
+//                float radius = 22f;
+//                View decorView = getWindow().getDecorView();
+//                decorView.setBackgroundColor(Color.parseColor("#000000"));
+//             ViewGroup  rootView = decorView.findViewById(android.R.id.content);
+//             Drawable windowsBackground = decorView.getBackground();
+//
+//             blurView.setupWith(rootView)
+//                     .setFrameClearDrawable(windowsBackground)
+//                     .setBlurAlgorithm(new RenderScriptBlur(getApplicationContext()))
+//                     .setBlurRadius(radius)
+//                     .setHasFixedTransformationMatrix(true);
+//         }
+//     });
 
 
         statusRecyler = findViewById(R.id.homeStatusRecycler);
@@ -241,12 +314,7 @@ public class HomeTimeline extends AppCompatActivity {
 
 //}
 
-
-
     private void postCommentMessage() {
-
-
-
 
         RequestQueue requestQueue;
         requestQueue = Volley.newRequestQueue(this);

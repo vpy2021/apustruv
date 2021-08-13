@@ -105,10 +105,10 @@
 
 
             <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/menuFAMID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:id="@+id/menuFAMID"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
                 android:src="@drawable/add_24"
@@ -120,6 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/syrinj"
+                    android:id="@+id/candleID"
                     app:fab_addButtonColorNormal="@color/white"
                     app:fab_addButtonPlusIconColor="#FFFFFF"
                     app:fab_size="mini" />
@@ -128,6 +129,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/t"
+                    android:id="@+id/textDesignFABID"
                     app:fab_addButtonColorNormal="@color/white"
                     app:fab_addButtonPlusIconColor="#FFFFFF"
                     app:fab_size="mini" />
@@ -136,6 +138,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/building"
+                    android:id="@+id/moviesFABID"
                     app:fab_addButtonColorNormal="@color/white"
                     app:fab_addButtonPlusIconColor="#FFFFFF"
                     app:fab_size="mini" />
@@ -144,6 +147,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/camera"
+                    android:id="@+id/cameraFABID"
                     app:fab_addButtonColorNormal="@color/white"
                     app:fab_addButtonPlusIconColor="#FFFFFF"
                     app:fab_size="mini" />
@@ -152,6 +156,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/video"
+                    android:id="@+id/videoFABID"
                     app:fab_addButtonColorNormal="@color/white"
                     app:fab_addButtonPlusIconColor="#FFFFFF"
                     app:fab_size="mini" />
@@ -160,6 +165,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/location"
+                    android:id="@+id/locatioFABID"
                     app:fab_addButtonColorNormal="@color/white"
                     app:fab_addButtonPlusIconColor="#FFFFFF"
                     app:fab_size="mini" />
@@ -168,6 +174,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/music"
+                    android:id="@+id/musicFABID"
                     app:fab_addButtonColorNormal="@color/white"
                     app:fab_addButtonPlusIconColor="#FFFFFF"
                     app:fab_size="mini" />
@@ -176,6 +183,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/text"
+                    android:id="@+id/textFABID"
                     app:fab_addButtonColorNormal="@color/white"
                     app:fab_addButtonPlusIconColor="#FFFFFF"
                     app:fab_size="mini" />
