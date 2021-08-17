@@ -1,6 +1,3 @@
-
-
-    
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,6 +7,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
+        android:name=".Activity.EmojiApplicationActivity"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,27 +16,32 @@
         android:theme="@style/Theme.Design.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Comment_section"
+            android:name=".Activity.MemberScreenActivity"
             android:exported="true" />
         <activity
-            android:name=".EditProfile"
+            android:name=".Activity.CommentRepliesActivity"
             android:exported="true" />
         <activity
-            android:name=".SignUp"
+            android:name=".Activity.Comment_sectionActivity"
             android:exported="true" />
-        <activity android:name=".LikeActivity" />
-        <activity android:name=".ChangePassword" />
-        <activity android:name=".AccountSetting" />
-        <activity android:name=".HelpCenter" />
-        <activity android:name=".Search_location" />
-        <activity android:name=".SignUp2" />
-        <activity android:name=".Walkthrough" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".Addtag" />
-        <activity android:name=".BottomNavbar">
-        <activity android:name=".AccountSetting" />
-        <activity android:name=".HomeTimeline">
+        <activity
+            android:name=".Activity.EditProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:exported="true" />
+        <activity android:name=".Activity.LikeActivity" />
+        <activity android:name=".Activity.ChangePasswordActivity" />
+        <activity android:name=".Activity.AccountSettingActivity" />
+        <activity android:name=".Activity.HelpCenterActivity" />
+        <activity android:name=".Activity.Search_locationActivity" />
+        <activity android:name=".Activity.SignUp2Activity" />
+        <activity android:name=".Activity.WalkthroughActivity" />
+        <activity android:name=".Activity.AddtagActivity" />
+        <activity android:name=".Activity.HomeActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.Account_setting2Activity" />
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,6 +49,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>

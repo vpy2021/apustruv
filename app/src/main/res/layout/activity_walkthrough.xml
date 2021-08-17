@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Walkthrough">
+    tools:context=".Activity.WalkthroughActivity">
 <include layout = "@layout/activity_addtag"></include>
     <include layout ="@layout/designrecycle"></include>
 </LinearLayout>

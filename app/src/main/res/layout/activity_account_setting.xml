@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F5F2EB"
     android:orientation="vertical"
-    tools:context=".AccountSetting">
+    tools:context=".Activity.AccountSettingActivity">
 
     <include layout="@layout/custom_actionbar_signup"/>
 
@@ -14,7 +14,7 @@
         android:id="@+id/letGet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
         android:paddingLeft="40dp"
         android:text="Account Setting"
         android:textColor="#2F4F4E"
@@ -25,8 +25,8 @@
         android:id="@+id/editProfileID"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="70dp"
         android:background="#F5F2EB"
         android:drawableStart="@drawable/pv"
         android:drawableLeft="@drawable/pv"
@@ -52,18 +52,18 @@
 
         <TextView
             android:id="@+id/privateID"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:background="#F5F2EB"
             android:drawableStart="@drawable/pn"
             android:drawableLeft="@drawable/pn"
-            android:layout_marginLeft="40dp"
             android:ems="10"
             android:textSize="20dp"
             android:drawablePadding="10dp"
             android:enabled="false"
             android:text="Private Account"
+            android:layout_marginHorizontal="30dp"
             android:textColor="#000000"
             android:inputType="textPersonName"
             android:gravity="center_vertical"
@@ -74,13 +74,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
+            android:layout_marginLeft="20dp"
             android:minHeight="48dp"
-            android:paddingLeft="40dp"
             android:textOff="off"
             android:textOn="on"
-            android:thumb="@drawable/circular_thumb"
+            android:textColor="#000000"
+            app:track="@drawable/track"
             app:showText="true"
-            app:track="@drawable/track" />
+            android:thumb="@drawable/circular_thumb" />
 
 
     </LinearLayout>
@@ -96,7 +97,7 @@
         android:id="@+id/changeID"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginHorizontal="40dp"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="20dp"
         android:background="#F5F2EB"
         android:drawableStart="@drawable/pv"

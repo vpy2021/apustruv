@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -33,7 +34,7 @@
                 android:text="Serndipity in love"
                 android:id="@+id/profileNameID"
                 android:layout_gravity="center_vertical"
-                android:textSize="20dp"
+                android:textSize="16dp"
                 android:layout_marginLeft="15dp"
                 android:textColor="#000000"/>
 
@@ -45,7 +46,7 @@
                 android:layout_marginLeft="30dp"
                 android:text="Follow"
                 android:textColor="#000000"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/reportDotID"
@@ -63,7 +64,9 @@
 
       <androidx.cardview.widget.CardView
           android:layout_width="match_parent"
-          android:layout_height="wrap_content">
+          android:layout_height="wrap_content"
+          app:cardCornerRadius="30dp"
+          android:backgroundTint="@color/bodycolor">
 
           <com.google.android.material.imageview.ShapeableImageView
               android:layout_width="match_parent"
@@ -105,12 +108,13 @@
                 android:src="@drawable/cmt" />
 
             <ImageView
+                android:id="@+id/shareID"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/share"
-                android:id="@+id/shareID"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"/>
+                android:src="@drawable/share"
+                tools:ignore="ImageContrastCheck" />
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"

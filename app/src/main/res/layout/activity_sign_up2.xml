@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F5F2EB"
     android:orientation="vertical"
-    tools:context=".SignUp2">
+    tools:context=".Activity.SignUp2Activity">
 
 
 <include layout="@layout/custom_actionbar_signup2"/>

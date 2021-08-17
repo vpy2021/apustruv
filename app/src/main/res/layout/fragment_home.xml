@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.HomeFragment"
+    android:background="#F5F2EB"
+    android:id="@+id/homeTimeLineID">
+
+    <include layout="@layout/custom_home_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F5F2EB"
+        android:layout_marginTop="60dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homeRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/commentSectionRecyclerViewID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/menuFAMID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/add_24"
+        android:clickable="true"
+        app:fab_addButtonColorNormal="@color/white"
+        app:fab_addButtonPlusIconColor="#2F4F4E"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/candleID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/syrinj"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/textDesignFABID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/t"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/moviesFABID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/building"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cameraFABID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/videoFABID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/video"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/locatioFABID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/musicFABID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/music"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/textFABID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/text"
+            app:fab_addButtonColorNormal="@color/white"
+            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_size="mini" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/bottomNavID"-->
+    <!--        app:itemTextColor="@drawable/selector"-->
+    <!--        app:itemIconTint="@drawable/selector"-->
+    <!--        app:menu="@menu/menu_navigation"-->
+    <!--        android:layout_alignParentBottom="true"/>-->
+
+    <!--<FrameLayout
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </FrameLayout>-->
+
+
+
+</RelativeLayout>

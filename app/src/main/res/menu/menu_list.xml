@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homefrag"
-        android:title="Home"
+        android:id="@+id/homeMenuID"
+        android:title="HomeTimeLine"
         android:icon="@drawable/ic_group_1428"
 
         />
 
     <item
-        android:id="@+id/searchfrag"
-        android:title="Search"
-        android:icon="@drawable/ic_search"
-
-        />
+        android:id="@+id/searchMenuID"
+        android:title="SearchLocation"
+        android:icon="@drawable/ic_search"/>
 
     <item
-        android:id="@+id/notifyfrag"
-        android:title="Notify"
+        android:id="@+id/notifyMenuID"
+        android:title="Notification"
         android:icon="@drawable/ic_notification"
 
         />
 
     <item
-        android:id="@+id/accountfrag"
-        android:title="Account"
+        android:id="@+id/accountMenuID"
+        android:title="Account Setting"
         android:icon="@drawable/ic_account"
 
         />

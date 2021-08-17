@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/addPhoto"
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:src="@drawable/profileup"
+              app:civ_border_width="2dp"
+              android:layout_gravity="center"
+              app:civ_border_color="#FF000000"/>
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/online"
+              android:layout_gravity="bottom"
+              android:layout_marginLeft="30dp"
+              android:id="@+id/onlineID"/>
+
+      </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Darell Steward"
+            android:id="@+id/profileNameID"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

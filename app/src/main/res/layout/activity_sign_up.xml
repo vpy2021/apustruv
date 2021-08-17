@@ -7,7 +7,7 @@
     android:background="#F5F2EB"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SignUp">
+    tools:context=".Activity.SignUpActivity">
 
 
     <include layout="@layout/custom_actionbar_signup"/>
@@ -117,7 +117,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/alreadyAccountID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="70dp"
@@ -125,4 +125,5 @@
         android:padding="10dp"
         android:gravity="center"
         android:text="Already have an account? Log In" />
+    
 </LinearLayout>

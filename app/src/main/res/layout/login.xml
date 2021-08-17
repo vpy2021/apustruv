@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F5F2EB"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".Activity.LoginActivity">
     <include layout="@layout/custom_layout"/>
 
     <LinearLayout
@@ -97,7 +97,7 @@
         android:textColor="#2F4F4E" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -111,7 +111,7 @@
         app:cornerRadius="20dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textClickForSignUpID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

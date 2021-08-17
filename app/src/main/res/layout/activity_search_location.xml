@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Search_location"
-    android:background="#F5F2EB">
+    tools:context=".Activity.Search_locationActivity"
+    android:background="#F5F2EB"
+    android:id="@+id/searchLocationID">
     <include layout="@layout/custom_location_layout"
         tools:ignore="ResourceCycle" />
 
@@ -19,9 +20,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:background="@drawable/concept"
-
-        >
+        android:background="@drawable/concept">
 
     </SearchView>
 
@@ -29,7 +28,14 @@
         android:id="@+id/lv_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        />
+        android:layout_marginLeft="30dp" />
 
-</LinearLayout>
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/bottomNavID"-->
+<!--        app:itemTextColor="@drawable/selector"-->
+<!--        app:itemIconTint="@drawable/selector"-->
+<!--        app:menu="@menu/menu_navigation"-->
+<!--        android:layout_alignParentBottom="true"/>-->
+</RelativeLayout>

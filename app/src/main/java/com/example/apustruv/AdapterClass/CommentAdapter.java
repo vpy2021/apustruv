@@ -5,12 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.apustruv.FetchingData.CommentData;
+import com.example.apustruv.Model.CommentData;
 import com.example.apustruv.R;
 import com.squareup.picasso.Picasso;
 
@@ -29,7 +30,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.DataView
     public DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.custom_comment, parent, false);
-        return new CommentAdapter.DataViewHolder(view);
+        return new DataViewHolder(view);
     }
 
     @Override
@@ -41,15 +42,14 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.DataView
 
     @Override
     public int getItemCount() {
-
-        return comment.size();
-
+        return 0;
     }
 
     class DataViewHolder extends RecyclerView.ViewHolder {
 
           ImageView commentProfilePhoto;
-          TextView commentProfileName, messageComment;
+          TextView commentProfileName, messageComment,countDay;
+          LinearLayout linearLayout;
 
        public DataViewHolder(@NonNull View itemView) {
            super(itemView);
@@ -57,6 +57,8 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.DataView
            commentProfilePhoto = itemView.findViewById(R.id.commentStatusImageHome);
            commentProfileName = itemView.findViewById(R.id.commentProfileNameID);
            messageComment = itemView.findViewById(R.id.commentMessageID);
+           countDay = itemView.findViewById(R.id.countDaysID);
+           linearLayout = itemView.findViewById(R.id.ll_action_coment_layout);
        }
    }
 }

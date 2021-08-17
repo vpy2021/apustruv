@@ -17,4 +17,13 @@
         android:src="@drawable/g"
         android:paddingLeft="90dp"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/addRequestID"
+        android:src="@drawable/addreq"
+        android:layout_marginLeft="90dp"
+        android:visibility="gone"/>
+
 </LinearLayout>

@@ -2,23 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     android:orientation="vertical"
     android:id="@+id/ll_custom_comment">
-
-    android:orientation="vertical">
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/commentStatusImageHome"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:src="@drawable/profileup"
             app:civ_border_width="1dp"
             android:layout_gravity="center"
@@ -38,7 +35,7 @@
                 android:layout_marginLeft="15dp"
                 android:text="Serndipity in love"
                 android:textColor="#000000"
-                android:textSize="20dp"
+                android:textSize="16dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -49,7 +46,7 @@
                 android:layout_marginLeft="15dp"
                 android:text="1 Day"
                 android:textColor="#000000"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
         </LinearLayout>
 
 
@@ -60,7 +57,7 @@
             android:id="@+id/commentMessageID"
             android:layout_gravity="center_vertical"
             android:text="love"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:layout_marginLeft="15dp"
             android:lines="8"
             android:maxLines="10"
@@ -68,5 +65,68 @@
             android:scrollbars="vertical"
             android:textColor="#000000"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/commentStatusImageHome2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profileup"
+            app:civ_border_width="1dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/commentProfileNameID2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="Serndipity in love"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countDaysID2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="1 Day"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentMessageID2"
+            android:layout_gravity="center_vertical"
+            android:text="love"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="1"
+            android:scrollbars="vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
 
 </LinearLayout>
