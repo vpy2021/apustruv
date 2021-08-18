@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MoviesSearchActivity"
+    android:background="@color/bodycolor">
+
+    <include layout="@layout/custom_actionbar_signup"/>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/moviesSearchID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@layout/custom_input_design"
+        android:iconifiedByDefault="false"
+        app:queryHint="What are you watching?" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/moviesSearchListID"/>
+
+</LinearLayout>

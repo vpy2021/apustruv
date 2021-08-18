@@ -39,6 +39,7 @@
         <entry key="..\:/apustrov/app/src/main/res/drawable/customdesign.xml" value="0.21388888888888888" />
         <entry key="..\:/apustrov/app/src/main/res/drawable/round_button.xml" value="0.18703703703703703" />
         <entry key="..\:/apustrov/app/src/main/res/drawable/rounded_image.xml" value="0.2203125" />
+        <entry key="..\:/apustrov/app/src/main/res/drawable/selector.xml" value="0.2203125" />
         <entry key="..\:/apustrov/app/src/main/res/drawable/splashbackground.xml" value="0.2203125" />
         <entry key="..\:/apustrov/app/src/main/res/drawable/track.xml" value="0.2203125" />
         <entry key="..\:/apustrov/app/src/main/res/layout/activity_account_setting.xml" value="0.25" />
@@ -52,6 +53,7 @@
         <entry key="..\:/apustrov/app/src/main/res/layout/activity_like.xml" value="0.12681159420289856" />
         <entry key="..\:/apustrov/app/src/main/res/layout/activity_main.xml" value="0.16168478260869565" />
         <entry key="..\:/apustrov/app/src/main/res/layout/activity_member_screen.xml" value="0.25" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/activity_movies_search.xml" value="0.25" />
         <entry key="..\:/apustrov/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/apustrov/app/src/main/res/layout/activity_sign_up2.xml" value="0.18" />
         <entry key="..\:/apustrov/app/src/main/res/layout/activity_walkthrough.xml" value="0.16168478260869565" />
@@ -68,6 +70,7 @@
         <entry key="..\:/apustrov/app/src/main/res/layout/custom_layout.xml" value="0.14764492753623187" />
         <entry key="..\:/apustrov/app/src/main/res/layout/custom_location_layout.xml" value="0.16168478260869565" />
         <entry key="..\:/apustrov/app/src/main/res/layout/custom_memeber_design.xml" value="0.2" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/custom_movies_seach_design.xml" value="0.25" />
         <entry key="..\:/apustrov/app/src/main/res/layout/custom_post.xml" value="0.22" />
         <entry key="..\:/apustrov/app/src/main/res/layout/designrecycle.xml" value="0.16168478260869565" />
         <entry key="..\:/apustrov/app/src/main/res/layout/fragment_home.xml" value="0.16168478260869565" />
@@ -76,6 +79,8 @@
         <entry key="..\:/apustrov/app/src/main/res/layout/round_button.xml" value="0.14764492753623187" />
         <entry key="..\:/apustrov/app/src/main/res/layout/round_image.xml" value="0.14673913043478262" />
         <entry key="..\:/apustrov/app/src/main/res/layout/rounded_button.xml" value="0.1" />
+        <entry key="..\:/apustrov/app/src/main/res/menu/menu_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/apustrov/app/src/main/res/menu/menu_navigation.xml" value="0.20416666666666666" />
         <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/activity_addtag.xml" value="0.1" />
         <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/activity_bottom_navbar.xml" value="0.24635416666666668" />
         <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/activity_walkthrough.xml" value="0.12291666666666666" />
