@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:elevation="12dp"
     android:layout_height="wrap_content"
     android:background="#F5F2EB">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backIcon"
+        android:src="@drawable/arr"
+        android:padding="@dimen/_15sdp"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:padding="20dp"
-        android:src="@drawable/back" />
+        android:layout_gravity="center"
+        android:src="@drawable/g"
+        android:paddingLeft="@dimen/_70sdp"/>
 
-   <ImageView
-       android:layout_width="wrap_content"
-       android:layout_height="match_parent"
-       android:src="@drawable/group" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick"
+        android:gravity="center"
+        android:textSize="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/_20sdp"
 
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Pick"
-       android:textSize="16sp"
-       android:textStyle="bold"
-       android:paddingTop="20sp"
-       android:textColor="#2F4F4E" />
+        android:textColor="#2F4F4E" />
 
-   <TextView
-       android:id="@+id/picktext"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
+    <TextView
+        android:id="@+id/picktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16sdp"
+        android:layout_margin="0dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/_20sdp"
+        android:textColor="#2F4F4E" />
 
-       android:layout_marginLeft="10dp"
-       android:textSize="16sp"
-       android:textStyle="bold"
-       android:paddingTop="20sp"
-       android:textColor="#2F4F4E" />
 </LinearLayout>
+

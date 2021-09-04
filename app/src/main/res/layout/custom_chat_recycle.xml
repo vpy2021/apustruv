@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Chat_tab1ID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bodycolor"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/Relative_ChatID"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="60dp"
+            android:elevation="16dp"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:id="@+id/green_imageID"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_ellipse_36" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/image_profileID"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/girlpic" />
+
+
+        <TextView
+            android:id="@+id/Chat_headID"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="25dp"
+            android:text="Marketing"
+            android:textColor="#2F4F4E"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Chat_descID"
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="50dp"
+            android:text="when you first log in to thw system"
+            android:textColor="#707070"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/Chat_timeID"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginVertical="25dp"
+            android:layout_marginLeft="320dp"
+            android:text="16:24"
+            android:textColor="#707070"
+            android:textSize="12dp" />
+
+
+
+        <ImageView
+            android:id="@+id/background_chatID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="65dp"
+            android:layout_marginLeft="330dp"
+            android:src="@drawable/ic_backgroundchat" />
+
+
+        <TextView
+            android:id="@+id/count_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="63dp"
+            android:layout_marginLeft="333dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

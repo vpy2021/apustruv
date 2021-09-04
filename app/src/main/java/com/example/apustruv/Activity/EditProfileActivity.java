@@ -75,7 +75,7 @@ public class EditProfileActivity extends AppCompatActivity {
                 ,R.string.invalidUserName);
         awesomeValidation.addValidation(this,R.id.ageID, RegexTemplate.NOT_EMPTY
                 ,R.string.invalidAge);
-        awesomeValidation.addValidation(this,R.id.mobileID,"[5-9]{1}[0-9]{9}$",R.string.invalidNumber);
+        awesomeValidation.addValidation(this,R.id.mobileID,"[5-9]{1}[0-9]{9}$",R.string.invalidMobileNumber);
         awesomeValidation.addValidation(this,R.id.emailID, Patterns.EMAIL_ADDRESS, R.string.invalidEmailID);
 
         onBack.setOnClickListener(new View.OnClickListener() {

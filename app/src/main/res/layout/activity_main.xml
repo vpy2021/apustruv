@@ -5,12 +5,39 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scaleType="fitXY"
     tools:context=".Activity.LoginActivity">
 
-    <ImageView
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/splash_drawablea"
-        android:scaleType="fitXY"/>
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mainlogoapustrov"
+            />
+
+    <ImageView
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:src="@drawable/apustrovlogo"
+       />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loremlogo"
+            android:layout_marginLeft="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_540sdp"
+            />
+
+    </RelativeLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,100 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/drawable/add_24.xml" value="0.2203125" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/drawable/selector.xml" value="0.2203125" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_account_setting.xml" value="0.15" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_account_setting2.xml" value="0.22" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_bottom_navbar.xml" value="0.22" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_comment_section_layout.xml" value="0.1480978260869565" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_edit_profile.xml" value="0.18" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_home_timeline.xml" value="0.18" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_like.xml" value="0.33" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_main.xml" value="0.10416666666666667" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_search_location.xml" value="0.18" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_sign_up.xml" value="0.18" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_sign_up2.xml" value="0.10416666666666667" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/activity_splash.xml" value="0.161231884057971" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/add.xml" value="0.1" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/custom_comment.xml" value="0.1480978260869565" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/custom_home_toolbar.xml" value="0.16893115942028986" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/custom_post.xml" value="0.1431159420289855" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/drag_down.xml" value="0.10416666666666667" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/fragment_account_i.xml" value="0.15" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/fragment_home.xml" value="0.15" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/fragment_home_s.xml" value="0.161231884057971" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/fragment_home_screen.xml" value="0.161231884057971" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/fragment_notification_i.xml" value="0.16893115942028986" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/fragment_search.xml" value="0.10416666666666667" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/login.xml" value="0.25" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/layout/notfi_recyccle.xml" value="0.1" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/menu/menu_list.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/ramvi/Downloads/apustrov/app/src/main/res/menu/menu_navigation.xml" value="0.20416666666666666" />
-        <entry key="..\:/apustrov/app/src/main/res/drawable-v24/circular_thumb.xml" value="0.2169230769230769" />
-        <entry key="..\:/apustrov/app/src/main/res/drawable/circular_thumb.xml" value="0.2169230769230769" />
-        <entry key="..\:/apustrov/app/src/main/res/drawable/custom_image_design.xml" value="0.2203125" />
-        <entry key="..\:/apustrov/app/src/main/res/drawable/custom_input_design.xml" value="0.2169230769230769" />
-        <entry key="..\:/apustrov/app/src/main/res/drawable/customdesign.xml" value="0.21388888888888888" />
-        <entry key="..\:/apustrov/app/src/main/res/drawable/round_button.xml" value="0.18703703703703703" />
-        <entry key="..\:/apustrov/app/src/main/res/drawable/rounded_image.xml" value="0.2203125" />
-        <entry key="..\:/apustrov/app/src/main/res/drawable/selector.xml" value="0.2203125" />
-        <entry key="..\:/apustrov/app/src/main/res/drawable/splashbackground.xml" value="0.2203125" />
-        <entry key="..\:/apustrov/app/src/main/res/drawable/track.xml" value="0.2203125" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_account_setting.xml" value="0.25" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_account_setting2.xml" value="0.14266304347826086" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_change_password.xml" value="0.18" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_comment_replies.xml" value="0.14764492753623187" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_comment_section_layout.xml" value="0.33" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_edit_profile.xml" value="0.18" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_help_center.xml" value="0.22" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_home_timeline.xml" value="0.25" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_like.xml" value="0.12681159420289856" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_main.xml" value="0.16168478260869565" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_member_screen.xml" value="0.25" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_movies_search.xml" value="0.25" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_sign_up2.xml" value="0.18" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/activity_walkthrough.xml" value="0.16168478260869565" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/circular_thumb.xml" value="0.14764492753623187" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/comment_replies_recycler.xml" value="0.14764492753623187" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/comment_section.xml" value="0.21" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_actionbar_signup.xml" value="0.18" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_actionbar_signup2.xml" value="0.14764492753623187" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_addtag.xml" value="0.16168478260869565" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_alert_dialogbox_camera.xml" value="0.16168478260869565" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_comment.xml" value="0.22" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_home_toolbar.xml" value="0.22" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_input_design.xml" value="0.14764492753623187" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_layout.xml" value="0.14764492753623187" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_location_layout.xml" value="0.16168478260869565" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_memeber_design.xml" value="0.2" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_movies_seach_design.xml" value="0.25" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/custom_post.xml" value="0.22" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/designrecycle.xml" value="0.16168478260869565" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/fragment_home.xml" value="0.16168478260869565" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/home_recycler_view.xml" value="0.15172101449275363" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/login.xml" value="0.14764492753623187" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/round_button.xml" value="0.14764492753623187" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/round_image.xml" value="0.14673913043478262" />
-        <entry key="..\:/apustrov/app/src/main/res/layout/rounded_button.xml" value="0.1" />
-        <entry key="..\:/apustrov/app/src/main/res/menu/menu_list.xml" value="0.20416666666666666" />
-        <entry key="..\:/apustrov/app/src/main/res/menu/menu_navigation.xml" value="0.20416666666666666" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/activity_addtag.xml" value="0.1" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/activity_bottom_navbar.xml" value="0.24635416666666668" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/activity_walkthrough.xml" value="0.12291666666666666" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/custom_addtag.xml" value="0.1" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/designrecycle.xml" value="0.1" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/fragment_home.xml" value="0.246875" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/fragment_notification_i.xml" value="0.246875" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/fragment_search.xml" value="0.246875" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/notfi_recyccle.xml" value="0.246875" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/layout/notifyrecycle.xml" value="0.246875" />
-        <entry key="..\:/updated Apustrov/apustrov/app/src/main/res/menu/menu_navigation.xml" value="0.246875" />
+        <entry key="..\:/Don't touch pro/apustrov/app/src/main/res/layout/activity_chat_screen.xml" value="0.18568840579710144" />
+        <entry key="..\:/Don't touch pro/apustrov/app/src/main/res/layout/activity_comment_section_layout.xml" value="0.18333333333333332" />
+        <entry key="..\:/Don't touch pro/apustrov/app/src/main/res/layout/custom_comment.xml" value="0.18568840579710144" />
+        <entry key="..\:/Don't touch pro/apustrov/app/src/main/res/layout/custom_layout.xml" value="0.18568840579710144" />
+        <entry key="..\:/Don't touch pro/apustrov/app/src/main/res/layout/custom_post.xml" value="0.12681159420289856" />
+        <entry key="..\:/Don't touch pro/apustrov/app/src/main/res/layout/fragment_home.xml" value="0.16" />
+        <entry key="..\:/Don't touch pro/apustrov/app/src/main/res/layout/fragment_postfragmentpage.xml" value="0.18568840579710144" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/activity_audio_search.xml" value="0.15307971014492755" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/activity_books.xml" value="0.17" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/activity_main.xml" value="0.1621376811594203" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/activity_movies_search.xml" value="0.10733695652173914" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/custom_audio_search.xml" value="0.15307971014492755" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/custom_books_search.xml" value="0.19" />
+        <entry key="..\:/apustrov/app/src/main/res/layout/custom_movies_seach_design.xml" value="0.21" />
       </map>
     </option>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodycolor"
+    android:orientation="vertical"
+    android:scaleType="fitXY">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bodycolor">
+
+
+        <ImageView
+            android:id="@+id/imagebackgroundprofileID"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/imagebackgroundprofile" />
+
+
+        <ImageView
+            android:id="@+id/accountseting12ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:src="@drawable/threedotologo" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_127sdp"
+            android:layout_marginTop="@dimen/_110sdp">
+
+            <ImageView
+                android:id="@+id/bckgrnd_topprofileimageID"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/photo_icon" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/top_profilefirstnameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_147sdp"
+            android:text=" @smith"
+            android:textColor="#2F4F4E"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About youself"
+            android:textSize="@dimen/_16sdp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/surnameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingRight="@dimen/_15sdp"
+        android:text="Jhon"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/AboutyourselfID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="About yourself"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+
+</LinearLayout>

@@ -3,22 +3,43 @@ package com.example.apustruv.Model;
 public class Modelrecycle {
 
 
-    private int imagetag2;
+    private String imagetag2;
     private String addtextview1;
     private String addtextview2;
     private String addbutton;
 
 
-    public Modelrecycle(int imagetag2, String addtextview1, String addtextview2, String addbutton){
-    this.imagetag2=imagetag2;
-    this.addtextview1=addtextview1;
-    this.addtextview2=addtextview2;
-    this.addbutton=addbutton;
+    public Modelrecycle(String imagetag2, String addtextview1, String addtextview2, String addbutton){
+
 
     }
 
+    public Modelrecycle() {
 
-    public int getImagetag2() {
+        this.imagetag2=imagetag2;
+        this.addtextview1=addtextview1;
+        this.addtextview2=addtextview2;
+        this.addbutton=addbutton;
+
+    }
+
+    public void setImagetag2(String imagetag2) {
+        this.imagetag2 = imagetag2;
+    }
+
+    public void setAddtextview1(String addtextview1) {
+        this.addtextview1 = addtextview1;
+    }
+
+    public void setAddtextview2(String addtextview2) {
+        this.addtextview2 = addtextview2;
+    }
+
+    public void setAddbutton(String addbutton) {
+        this.addbutton = addbutton;
+    }
+
+    public String getImagetag2() {
         return imagetag2;
     }
 
@@ -35,4 +56,6 @@ public class Modelrecycle {
     }
 
 
+    public void setaddtextview1(String textview) {
+    }
 }

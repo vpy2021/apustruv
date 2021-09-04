@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragAccountID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodycolor"
+    android:orientation="vertical"
+    tools:context=".Fragment.Account_i_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/custom_account_screen_top_profile" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@color/bodycolor"
+        app:tabIndicator="@color/mycolor"
+        app:tabIndicatorColor="@color/mycolor"
+        app:tabSelectedTextColor="@color/mycolor"
+        app:tabTextColor="@color/indcator"
+        tools:ignore="SpeakableTextPresentCheck">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/posttab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/followerstab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Followers" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/followingtab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Following" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</LinearLayout>

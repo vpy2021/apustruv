@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:elevation="@dimen/_12sdp"
     android:layout_height="wrap_content"
     android:background="#F5F2EB">
 <ImageView
@@ -8,22 +9,16 @@
     android:layout_height="wrap_content"
     android:id="@+id/backIcon"
     android:src="@drawable/arr"
-    android:padding="15dp"/>
+    android:padding="@dimen/_15sdp"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:src="@drawable/g"
-        android:paddingLeft="90dp"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/addRequestID"
-        android:src="@drawable/addreq"
-        android:layout_marginLeft="90dp"
-        android:visibility="gone"/>
+        android:layout_marginHorizontal="@dimen/_68sdp"/>
 
 </LinearLayout>
+
+
+

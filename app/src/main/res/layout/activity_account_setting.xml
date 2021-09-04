@@ -14,36 +14,36 @@
         android:id="@+id/letGet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:paddingLeft="40dp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:text="Account Setting"
-        android:textColor="#2F4F4E"
-        android:textSize="24sp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textColor="@color/mycolor"
+        android:textSize="@dimen/_22sdp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/editProfileID"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="70dp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:background="#F5F2EB"
         android:drawableStart="@drawable/pv"
         android:drawableLeft="@drawable/pv"
-        android:drawablePadding="10dp"
+        android:drawablePadding="@dimen/_5sdp"
         android:ems="10"
         android:gravity="center_vertical"
-        android:textSize="20dp"
+        android:textSize="@dimen/_16sdp"
         android:text="Edit Profiile"
         android:inputType="textPersonName"
-        android:textColor="#000000"
+        android:textColor="@color/indcator"
         android:visibility="visible" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginLeft="80dp"
-        android:background="#707070" />
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:background="#9C9C9C" />
 
 
     <LinearLayout
@@ -52,69 +52,94 @@
 
         <TextView
             android:id="@+id/privateID"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:background="#F5F2EB"
             android:drawableStart="@drawable/pn"
             android:drawableLeft="@drawable/pn"
+            android:drawablePadding="@dimen/_5sdp"
             android:ems="10"
-            android:textSize="20dp"
-            android:drawablePadding="10dp"
             android:enabled="false"
-            android:text="Private Account"
-            android:layout_marginHorizontal="30dp"
-            android:textColor="#000000"
-            android:inputType="textPersonName"
             android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:text="Private Account"
+            android:textColor="@color/indcator"
+            android:textSize="@dimen/_16sdp"
             android:visibility="visible" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/toggleButton"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/_50sdp"
             android:layout_height="wrap_content"
-            android:gravity="right"
-            android:layout_marginLeft="20dp"
-            android:minHeight="48dp"
-            android:textOff="off"
-            android:textOn="on"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:minHeight="@dimen/_30sdp"
             android:textColor="#000000"
-            app:track="@drawable/track"
+            android:textOff="On"
+            android:textOn="off"
+            android:thumb="@drawable/circular_thumb"
             app:showText="true"
-            android:thumb="@drawable/circular_thumb" />
+            app:track="@drawable/track" />
 
 
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="80dp"
-        android:background="#707070" />
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:background="#9C9C9C" />
 
 
     <TextView
         android:id="@+id/changeID"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:background="#F5F2EB"
-        android:drawableStart="@drawable/pv"
+        android:drawableStart="@drawable/folowinglogo"
         android:drawableLeft="@drawable/pv"
-        android:drawablePadding="10dp"
+        android:drawablePadding="@dimen/_10sdp"
         android:ems="10"
         android:gravity="center_vertical"
-        android:textSize="20dp"
+        android:textSize="@dimen/_16sdp"
         android:text="Change Password"
         android:inputType="textPersonName"
-        android:textColor="#000000"
+        android:textColor="@color/indcator"
         android:visibility="visible" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="80dp"
-        android:background="#707070" />
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:background="#9C9C9C" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_190sdp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Version info"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

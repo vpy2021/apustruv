@@ -9,7 +9,7 @@ import android.view.MenuItem;
 
 import com.example.apustruv.Fragment.Account_i_Fragment;
 import com.example.apustruv.Fragment.HomeFragment;
-import com.example.apustruv.Fragment.Notification_i_Fragment;
+import com.example.apustruv.Fragment.NotificationFragment;
 import com.example.apustruv.Fragment.SearchFragment;
 import com.example.apustruv.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -42,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
 
                         break;
                     case R.id.notify:
-                        fragment = new Notification_i_Fragment();
+                        fragment = new NotificationFragment();
                         break;
                     case R.id.account:
                         fragment = new Account_i_Fragment();

@@ -14,17 +14,17 @@ import com.example.apustruv.R;
 public class Account_setting2Activity extends AppCompatActivity {
 
     ImageView drag;
-    LinearLayout linearLayout, linearLayout1;
+    LinearLayout linearLayout;
     TextView accountSetting,privacyPolicy;
-   // CardView cardView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_account_i);
+        setContentView(R.layout.activity_account_setting2);
 
-//        drag = (ImageView) findViewById(R.id.dragID);
-//
+       drag = (ImageView) findViewById(R.id.dragID);
+
         linearLayout = (LinearLayout) findViewById(R.id.dragDownLayoutID);
         accountSetting = findViewById(R.id.AccountVisitID);
 

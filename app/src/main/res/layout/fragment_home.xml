@@ -9,36 +9,37 @@
     android:background="#F5F2EB"
     android:id="@+id/homeTimeLineID">
 
-    <include layout="@layout/custom_home_toolbar"
-        android:layout_alignParentTop="true"
+    <include
+        layout="@layout/custom_home_toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent" />
+        android:layout_alignParentTop="true" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#F5F2EB"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="@dimen/_45sdp"
+        android:background="#F5F2EB">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/homeRecycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="5dp" />
+         />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginHorizontal="10dp">
+            android:layout_marginHorizontal="@dimen/_10sdp">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/commentSectionRecyclerViewID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="5dp"/>
+                android:paddingLeft="@dimen/_5sdp"/>
 
         </LinearLayout>
 
@@ -49,8 +50,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:src="@drawable/add_24"
         android:clickable="true"
+        android:src="@drawable/add_24"
         app:fab_addButtonColorNormal="@color/white"
         app:fab_addButtonPlusIconColor="#2F4F4E"
         tools:ignore="SpeakableTextPresentCheck">
@@ -59,70 +60,71 @@
             android:id="@+id/candleID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/syrinj"
+            android:src="@drawable/text"
             app:fab_addButtonColorNormal="@color/white"
             app:fab_addButtonPlusIconColor="#FFFFFF"
             app:fab_size="mini" />
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/textDesignFABID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/t"
-            app:fab_addButtonColorNormal="@color/white"
-            app:fab_addButtonPlusIconColor="#FFFFFF"
-            app:fab_size="mini" />
+<!--        <com.getbase.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/textDesignFABID"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/t"-->
+<!--            app:fab_addButtonColorNormal="@color/white"-->
+<!--            app:fab_addButtonPlusIconColor="#FFFFFF"-->
+<!--            app:fab_size="mini" />-->
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/moviesFABID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/building"
+            android:src="@drawable/music"
             app:fab_addButtonColorNormal="@color/white"
-            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_addButtonPlusIconColor="#F85B7D"
             app:fab_size="mini" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/cameraFABID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/camera"
+            android:src="@drawable/cam"
             app:fab_addButtonColorNormal="@color/white"
-            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_addButtonPlusIconColor="#0148A4"
             app:fab_size="mini" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/videoFABID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/video"
+            android:src="@drawable/mov"
             app:fab_addButtonColorNormal="@color/white"
-            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_addButtonPlusIconColor="#F8971C"
             app:fab_size="mini" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/locatioFABID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/location"
+            android:src="@drawable/loc"
             app:fab_addButtonColorNormal="@color/white"
-            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_addButtonPlusIconColor="#3F3B3A"
             app:fab_size="mini" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/musicFABID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/music"
+            android:src="@drawable/bookupdated"
             app:fab_addButtonColorNormal="@color/white"
-            app:fab_addButtonPlusIconColor="#FFFFFF"
+            app:fab_addButtonPlusIconColor="#5EB435"
             app:fab_size="mini" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/textFABID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/text"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:src="@drawable/syrinj"
             app:fab_addButtonColorNormal="@color/white"
             app:fab_addButtonPlusIconColor="#FFFFFF"
             app:fab_size="mini" />

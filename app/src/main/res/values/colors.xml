@@ -9,4 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="mycolor">#2F4F4E</color>
     <color name="bodycolor">#F5F2EB</color>
+    <color name="indcator">#808080</color>
+    <color name="textindicator">#2F4F4E</color>
+    <color name="unrating">#6D6D6D</color>
+    <color name="rating">#FF9900</color>
+
+
+
 </resources>

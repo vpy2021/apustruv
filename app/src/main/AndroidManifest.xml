@@ -16,7 +16,10 @@
         android:theme="@style/Theme.Design.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Activity.MainActivity"
+            android:name=".Activity.AudioSearchActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.BooksActivity"
             android:exported="true" />
         <activity
             android:name=".Activity.MemberScreenActivity"
@@ -40,17 +43,22 @@
         <activity android:name=".Activity.Search_locationActivity" />
         <activity android:name=".Activity.SignUp2Activity" />
         <activity android:name=".Activity.WalkthroughActivity" />
+        <activity android:name=".Activity.Manage_tag" />
         <activity android:name=".Activity.AddtagActivity" />
-        <activity android:name=".Activity.HomeActivity" />
-        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.Chat_screen" />
         <activity android:name=".Activity.Account_setting2Activity" />
-        <activity android:name="MoviesSearchActivity">
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="true" />
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.MoviesSearchActivity" />
     </application>
 
 </manifest>

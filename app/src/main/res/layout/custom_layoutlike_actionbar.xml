@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#F5F2EB">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backIcon"
+        android:src="@drawable/arr"
+        android:padding="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/g"
+        android:paddingLeft="90dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Pick"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingLeft="40dp"
+        android:gravity="center"
+        android:textColor="#2F4F4E" />
+
+    <TextView
+        android:id="@+id/picktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:padding="2dp"
+
+        android:layout_gravity="center"
+        android:textColor="#2F4F4E" />
+
+
+
+
+</LinearLayout>

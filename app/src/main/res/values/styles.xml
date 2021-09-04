@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="colorControlActivated" type="color">android:@color/rating</item>
+    <item name="colorControlNormal" type="color">android:@color/unrating</item>
+
+
+
+    <style name="RatingBar">styles</style>
+</resources>

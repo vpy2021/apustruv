@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodycolor"
+    android:orientation="vertical"
+    tools:context=".Fragment.Postpage">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:background="@color/bodycolor"
+                app:cardCornerRadius="@dimen/_30sdp">
+
+                <ImageView
+                    android:id="@+id/emoji_postmen"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/manlogo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/emoji_profilename"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_57sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Serndipity"
+                android:textColor="@color/textindicator"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_57sdp"
+                android:layout_marginTop="@dimen/_38sdp"
+                android:text="By"
+                android:textColor="#858585"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/book_author"
+                android:layout_width="@dimen/_85sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginLeft="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_36sdp"
+                android:text="J.K.Rowling"
+                android:textColor="#000000"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/reaction"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignBaseline="@+id/emoji_profilename"
+
+                android:layout_marginLeft="@dimen/_130sdp"
+                android:text="i am Reading Harry potter"
+                android:textColor="#8E8E8E"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/emoji_reaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginVertical="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:gravity="center_horizontal"
+                android:text="..."
+                android:textAlignment="center"
+                android:textColor="#858585"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_42sdp"
+                android:background="@color/bodycolor"
+                android:numStars="5"
+                android:rating="3.5" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerreaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_50sdp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_3sdp"
+        >
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:gravity="start"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="1,026"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="notes"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/shareID"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_90sdp"
+            android:src="@drawable/ic_shareupdatedlogo"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/refreshID"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_pathreferseogo" />
+
+        <ImageView
+            android:id="@+id/clickLike"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_heartlogo" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homereactionrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

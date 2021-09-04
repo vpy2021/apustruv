@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodycolor"
+    android:orientation="vertical"
+    android:id="@+id/chatID"
+    tools:context=".Activity.Chat_screen">
+
+    <include layout="@layout/custom_actionbar_signup"></include>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_16sdp"
+        app:tabIndicatorColor="@color/mycolor"
+        app:tabSelectedTextColor="@color/mycolor"
+        app:tabTextColor="@color/indcator"
+        tools:ignore="SpeakableTextPresentCheck">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_individualitemID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Individual" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_groupitemID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group chat"
+            />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pagerID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</LinearLayout>

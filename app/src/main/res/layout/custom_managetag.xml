@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:color="#BB000000"
+    android:elevation="16dp"
+    android:orientation="horizontal"
+    android:background="#F5F2EB">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backIcon"
+        android:src="@drawable/arr"
+        android:padding="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/g"
+        android:paddingLeft="90dp"/>
+
+    <TextView
+        android:id="@+id/manage_addID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Add"
+        android:textColor="@color/mycolor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+</LinearLayout>
+
+

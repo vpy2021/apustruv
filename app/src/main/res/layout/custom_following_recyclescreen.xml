@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bodycolor"
+    android:id="@+id/followersrecyclerID"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/bodycolor"
+            android:layout_marginRight="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_30sdp">
+
+            <ImageView
+                android:id="@+id/followingimage"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/girlpic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/followingheading"
+            android:layout_width="@dimen/_102sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Marketing"
+            android:textColor="#000000"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/followingdesricption"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:text="when you first log in to thw system"
+            android:textColor="#8E8E8E"
+            android:textSize="@dimen/_14sdp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notifi_design"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/notifi_design"
     android:orientation="vertical">
-
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
-
         android:layout_height="wrap_content"
-        >
+
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:background="@color/bodycolor"
-            app:cardCornerRadius="30dp">
+            app:cardCornerRadius="@dimen/_30sdp">
 
             <ImageView
                 android:id="@+id/i_mage"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/girlpic" />
 
@@ -34,39 +32,38 @@
 
         <TextView
             android:id="@+id/D_esc"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="90dp"
-            android:layout_marginTop="25dp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:text="Marketing"
-            android:textColor="#2F4F4E"
-            android:textSize="16dp"
-            android:textStyle="bold" />
+            android:textColor="#000000"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:id="@+id/H_ead"
-            android:layout_width="150dp"
-            android:layout_height="36dp"
-            android:layout_marginLeft="90dp"
-            android:layout_marginTop="50dp"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_45sdp"
             android:text="when you first log in to thw system"
-            android:textColor="#707070"
-            android:textSize="14sp" />
+            android:textColor="#8E8E8E"
+            android:textSize="@dimen/_14sdp" />
 
         <TextView
             android:id="@+id/T_ime"
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_marginVertical="30dp"
-            android:layout_marginLeft="315dp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_2sdp"
             android:text="16:24"
-            android:textColor="#707070"
-            android:textSize="12dp" />
+            android:textColor="#8E8E8E"
+            android:textSize="@dimen/_14sdp" />
 
 
     </RelativeLayout>
-
-
 
 
 </LinearLayout>

@@ -5,8 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
     tools:context=".Activity.Comment_sectionActivity"
     android:id="@+id/ll_action_coment_layout">
+
+
 
     <TextView
         android:layout_width="match_parent"
@@ -14,72 +17,73 @@
         android:lines="8"
         android:maxLines="10"
         android:minLines="1"
-        android:textSize="16sp"
+        android:textSize="@dimen/_12sdp"
         android:scrollbars="vertical"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/_1sdp"
         android:text="lorem lorem lorem lorem lore"
         android:textColor="@color/black" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="5dp"
         android:id="@+id/showMoreCommentID"
         android:lines="8"
         android:maxLines="10"
         android:minLines="1"
         android:scrollbars="vertical"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/_3sdp"
         android:text="Show more replies"
-        android:textStyle="bold"
+        android:textStyle="normal"
         android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textSize="@dimen/_14sdp" />
 
-    <include layout="@layout/custom_comment"/>
+    <include layout="@layout/custom_comment" />
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:layout_marginTop="10dp"
-        android:id="@+id/rootViewID"
-        android:layout_marginHorizontal="10dp">
-
-        <ImageView
-            android:id="@+id/iv_emoji"
-            android:layout_width="20dp"
-            android:layout_height="40dp"
-            android:paddingTop="5dp"
-            android:layout_marginRight="5dp"
-            android:src="@drawable/emoji" />
-
-        <com.vanniktech.emoji.EmojiEditText
-            android:id="@+id/messageID"
+        <LinearLayout
+            android:id="@+id/rootViewID"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
 
-            android:layout_toStartOf="@+id/iv_send"
-            android:layout_toLeftOf="@+id/iv_send"
-            android:layout_toEndOf="@+id/iv_emoji"
-            android:layout_toRightOf="@+id/iv_emoji"
-            android:background="@layout/custom_input_design"
-            android:ems="10"
+            <ImageView
+                android:id="@+id/iv_emoji"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/emoji" />
 
-            android:textColorHint="#8E8E8E"
-            android:visibility="visible"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            <com.vanniktech.emoji.EmojiEditText
+                android:id="@+id/messageID"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toStartOf="@+id/iv_send"
+                android:layout_toLeftOf="@+id/iv_send"
+                android:layout_toEndOf="@+id/iv_emoji"
+                android:layout_toRightOf="@+id/iv_emoji"
+                android:background="@layout/custom_input_design"
+                android:ems="10"
+                android:hint="typing something..."
+                android:paddingLeft="@dimen/_15sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColorHint="#8E8E8E"
+                android:visibility="visible"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-        <ImageView
-            android:id="@+id/iv_send"
-            android:layout_width="20dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:paddingTop="5dp"
-            android:paddingLeft="5dp"
-            android:src="@drawable/send" />
+            <ImageView
+                android:id="@+id/iv_send"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/send" />
 
 
-    </RelativeLayout>
-</LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>

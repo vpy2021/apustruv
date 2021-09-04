@@ -4,6 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scaleType="fitXY"
     tools:context=".Activity.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:src="@drawable/mainlogoapustrov"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@drawable/apustrovlogo"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_200sdp"
+            />
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

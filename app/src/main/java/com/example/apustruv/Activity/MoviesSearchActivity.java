@@ -1,4 +1,4 @@
-package com.example.apustruv;
+package com.example.apustruv.Activity;
 
 import static android.content.ContentValues.TAG;
 
@@ -22,6 +22,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.apustruv.AdapterClass.MemberScreenAdapter;
 import com.example.apustruv.AdapterClass.MoviesSearchAdapter;
 import com.example.apustruv.Model.MoviesSearchModel;
+import com.example.apustruv.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

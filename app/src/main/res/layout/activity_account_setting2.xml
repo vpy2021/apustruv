@@ -4,291 +4,325 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bodycolor"
     android:orientation="vertical"
     tools:context=".Activity.Account_setting2Activity"
     android:id="@+id/accountID">
 
+    <include layout="@layout/notificatin_addtagactionbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/account" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/AccountVisitID"
+            android:text="Account Setting"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_75sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#9C9C9C"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bodycolor"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/twopeople" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Following"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_75sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#9C9C9C"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/folowinglogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Followers"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_75sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#9C9C9C"
+        tools:ignore="MissingConstraints" />
+
 
-<!--    <include layout="@layout/custom_addtag"></include>-->
-
-
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:id="@+id/cardID">-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10dp"-->
-<!--            android:src="@drawable/account" />-->
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="80dp"-->
-<!--            android:padding="10dp"-->
-<!--            android:id="@+id/AccountID"-->
-<!--            android:text="Account Setting"-->
-<!--            android:textSize="18dp"-->
-<!--            android:textStyle="bold"-->
-<!--            />-->
-
-
-
-
-<!--    </androidx.cardview.widget.CardView>-->
-
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_marginLeft="80dp"-->
-<!--        android:layout_height="2dp"/>-->
-
-
-
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:background="@color/bodycolor"-->
-<!--        >-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="60dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10dp"-->
-<!--            android:src="@drawable/twopeople" />-->
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="80dp"-->
-<!--            android:padding="10dp"-->
-<!--            android:text="Following"-->
-<!--            android:textSize="18dp"-->
-<!--            android:textStyle="bold"-->
-
-
-<!--            />-->
-
-<!--    </androidx.cardview.widget.CardView>-->
-
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_marginLeft="80dp"-->
-<!--        android:layout_height="2dp"/>-->
-
-
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="60dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10dp"-->
-<!--            android:src="@drawable/folowinglogo" />-->
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="80dp"-->
-<!--            android:padding="10dp"-->
-<!--            android:text="Followers"-->
-<!--            android:textSize="18sp"-->
-<!--            android:textStyle="bold" />-->
-
-<!--    </androidx.cardview.widget.CardView>-->
-
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_marginLeft="80dp"-->
-<!--        android:layout_height="2dp"/>-->
-
-
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="60dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10dp"-->
-<!--            android:src="@drawable/folowinglogo" />-->
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="80dp"-->
-<!--            android:padding="10dp"-->
-<!--            android:text="Drafts"-->
-<!--            android:textSize="18sp"-->
-<!--            android:textStyle="bold"-->
-
-
-<!--            />-->
-
-<!--    </androidx.cardview.widget.CardView>-->
-
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_marginLeft="80dp"-->
-<!--        android:layout_height="2dp"/>-->
-
-
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="60dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10sp"-->
-<!--            android:src="@drawable/reportlogo" />-->
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="80dp"-->
-<!--            android:padding="10sp"-->
-<!--            android:text="Report"-->
-<!--            android:textSize="18sp"-->
-<!--            android:textStyle="bold"-->
-
-
-<!--            />-->
-
-<!--    </androidx.cardview.widget.CardView>-->
-
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_marginLeft="80dp"-->
-<!--        android:layout_height="2dp"/>-->
-
-
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="60dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10sp"-->
-<!--            android:src="@drawable/legallogo" />-->
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="80dp"-->
-<!--            android:padding="10dp"-->
-<!--            android:text="Legal"-->
-<!--            android:textSize="18sp"-->
-<!--            android:textStyle="bold"-->
-<!--            />-->
-
-
-<!--        <ImageView-->
-
-<!--            android:id="@+id/dragID"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="320dp"-->
-<!--            android:layout_weight="5"-->
-<!--            android:padding="10dp"-->
-<!--            android:src="@drawable/path" />-->
-
-
-
-
-
-
-
-<!--    </androidx.cardview.widget.CardView>-->
-
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_marginLeft="80dp"-->
-<!--        android:layout_height="2dp"/>-->
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="horizontal">-->
-
-<!--         <include layout="@layout/drag_down" android:visibility="gone"/>-->
-
-
-
-<!--    </LinearLayout>-->
-
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="vertical">-->
-
-<!--        <androidx.cardview.widget.CardView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:padding="10sp"-->
-<!--                android:src="@drawable/notificationlogo" />-->
-
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="80dp"-->
-<!--                android:padding="10dp"-->
-
-<!--                android:text="Notification"-->
-<!--                android:textSize="18dp"-->
-<!--                android:textStyle="bold"-->
-<!--                />-->
-
-
-
-
-<!--        </androidx.cardview.widget.CardView>-->
-
-
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_marginLeft="80dp"-->
-<!--            android:layout_height="2dp"/>-->
-
-
-<!--    </LinearLayout>-->
-
-<!--        <androidx.cardview.widget.CardView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-
-<!--            <ImageView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:padding="10dp"-->
-<!--                android:src="@drawable/logoutlogo" />-->
-
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="80dp"-->
-<!--                android:padding="10sp"-->
-
-<!--                android:text="Logout"-->
-<!--                android:textSize="18dp"-->
-<!--                android:textStyle="bold"-->
-<!--                />-->
-
-
-
-
-<!--        </androidx.cardview.widget.CardView>-->
-
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/folowinglogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Drafts"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_75sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#9C9C9C"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/reportlogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Report"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal"
+
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_75sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#9C9C9C"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/legallogo" />
+
+
+        <TextView
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Legal"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal"
+           />
+
+        <ImageView
+            android:id="@+id/dragID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/path"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_50sdp" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_75sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#9C9C9C"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <include layout="@layout/drag_down" android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/notificationlogo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="Notification"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="normal"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_75sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#9C9C9C"
+            tools:ignore="MissingConstraints" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/logoutlogo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Logout"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_75sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#9C9C9C"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_80sdp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Version info"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
 
 
 

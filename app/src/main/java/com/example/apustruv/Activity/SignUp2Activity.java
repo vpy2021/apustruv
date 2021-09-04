@@ -42,7 +42,7 @@ public class SignUp2Activity extends AppCompatActivity {
 
 
     EditText nickName, age, about;
-    ImageView imageView, profileImageView;
+    ImageView imageView, profileImageView,backbutton;
     Button getStartedBtn;
     AlertDialog alertDialogProfile;
     AwesomeValidation awesomeValidation;
@@ -76,6 +76,13 @@ public class SignUp2Activity extends AppCompatActivity {
                 chooseProfilePicture();
             }
         });
+
+//        backbutton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                onBackPressed();
+//            }
+//        });
 
         // Click Listner for API
 

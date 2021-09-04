@@ -4,6 +4,24 @@ public class CommentData {
     private String profileImage;
     private String profileName;
     private String commentMessage;
+    private String countTime;
+    private String postCommentTemp;
+
+    public String getPostCommentTemp() {
+        return postCommentTemp;
+    }
+
+    public void setPostCommentTemp(String postComment) {
+        this.postCommentTemp = postComment;
+    }
+
+    public String getCountTime() {
+        return countTime;
+    }
+
+    public void setCountTime(String countTime) {
+        this.countTime = countTime;
+    }
 
     public CommentData(){
 

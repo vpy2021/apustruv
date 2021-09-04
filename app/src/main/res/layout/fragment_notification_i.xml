@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Fragment.Notification_i_Fragment">
+    android:background="@color/bodycolor"
+    tools:context=".Fragment.NotificationFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,11 +14,12 @@
         android:orientation="vertical"
         >
 
-    <include layout="@layout/custom_addtag"></include>
+    <include layout="@layout/notificatin_addtagactionbar"></include>
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/R_i"
+        android:layout_marginTop="@dimen/_20sdp"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

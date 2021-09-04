@@ -5,7 +5,7 @@
     <string name="invalidPassword">Please Enter 6 digit password</string>
     <string name="invalidConfirmPassword">Password Not Matched</string>
     <string name="passwordincorrect">Password Not Matched</string>
-    <string name="invalidNumber">Please Enter Correct Mobile Number</string>
+    <string name="invalidMobileNumber">Please Enter Correct Mobile Number</string>
     <string name="invalidEmailID">Please Enter Correct Email</string>
     <string name="invalidName">Please Enter Your Name</string>
     <string name="invalidUserName">Enter Your UserName</string>
@@ -13,7 +13,15 @@
     <string name="invalidAge">Enter Your Age</string>
     <string name="invalidNickName">Enter Your Nick Name</string>
     <string name="dashboard">dashboard</string>
-
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tablayout_account">TablayoutAccount</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_account_tabitemspost">Account_tabitemspost</string>
 </resources>
