@@ -4,26 +4,20 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.solver.widgets.analyzer.HorizontalWidgetRun;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.apustruv.AdapterClass.HomePostAdapter;
-import com.example.apustruv.AdapterClass.MemberScreenAdapter;
 import com.example.apustruv.AdapterClass.PostreactionAdapter;
 import com.example.apustruv.AdapterClass.Reaction_postadapter;
-import com.example.apustruv.Model.MemberScreenData;
 import com.example.apustruv.Model.Postmadalmodel;
 import com.example.apustruv.Model.Reaction_postdatamodel;
 import com.example.apustruv.R;

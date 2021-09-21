@@ -27,12 +27,16 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.basgeekball.awesomevalidation.AwesomeValidation;
 import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.basgeekball.awesomevalidation.utility.RegexTemplate;
+import com.example.apustruv.Constant.Constants;
+import com.example.apustruv.Model.SignUpModel;
 import com.example.apustruv.R;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -42,12 +46,13 @@ public class SignUp2Activity extends AppCompatActivity {
 
 
     EditText nickName, age, about;
-    ImageView imageView, profileImageView,backbutton;
+    ImageView imageView, profileImageView, backbtn;
     Button getStartedBtn;
     AlertDialog alertDialogProfile;
     AwesomeValidation awesomeValidation;
-
-    String URL = "https://www.getpostman.com/collections/9cf4a0cb06a726a786ca";
+    String loginUserName, loginEmail, loginPassword, loginConfirmPass, loginMobileNum, loginAge, loginNickName, loginAbout;
+    String URL = Constants.SignUp;
+    String imageProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,18 +60,29 @@ public class SignUp2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up2);
 
 
-        getStartedBtn = (Button) findViewById(R.id.getStartedButton);
-        profileImageView = (ImageView) findViewById(R.id.profileImageView);
-        nickName = (EditText) findViewById(R.id.nickNameID);
-        age = (EditText) findViewById(R.id.ageID);
-        about = (EditText) findViewById(R.id.aboutID);
+        getStartedBtn = findViewById(R.id.getStartedButton);
+        profileImageView = findViewById(R.id.profileImageView);
+        nickName = findViewById(R.id.nickNameID);
+        age = findViewById(R.id.ageID);
+        about = findViewById(R.id.aboutID);
+        backbtn = findViewById(R.id.backbutton);
+
+        loginUserName = getIntent().getStringExtra("SignName");
+        loginMobileNum = getIntent().getStringExtra("SignMobileNum");
+        loginEmail = getIntent().getStringExtra("SignEmail");
+        loginPassword = getIntent().getStringExtra("SignPass");
+        loginConfirmPass = getIntent().getStringExtra("SignConfirmPass");
+
+        loginNickName = nickName.getText().toString();
+        loginAge = age.getText().toString();
+        loginAbout = about.getText().toString();
 
 
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
 
-        awesomeValidation.addValidation(this,R.id.nickNameID, RegexTemplate.NOT_EMPTY,R.string.invalidNickName);
-        awesomeValidation.addValidation(this,R.id.aboutID, RegexTemplate.NOT_EMPTY,R.string.invalidAbout);
-        awesomeValidation.addValidation(this,R.id.ageID, RegexTemplate.NOT_EMPTY,R.string.invalidAge);
+        awesomeValidation.addValidation(this, R.id.nickNameID, RegexTemplate.NOT_EMPTY, R.string.invalidNickName);
+        awesomeValidation.addValidation(this, R.id.aboutID, RegexTemplate.NOT_EMPTY, R.string.invalidAbout);
+        awesomeValidation.addValidation(this, R.id.ageID, RegexTemplate.NOT_EMPTY, R.string.invalidAge);
 
         // click Listner for Profile Photo
 
@@ -77,23 +93,22 @@ public class SignUp2Activity extends AppCompatActivity {
             }
         });
 
-//        backbutton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                onBackPressed();
-//            }
-//        });
+        backbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
         // Click Listner for API
 
         getStartedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              if(awesomeValidation.validate()){
-             //     updateData();
-                  Intent intent = new Intent(SignUp2Activity.this,LoginActivity.class);
-                  startActivity(intent);
-              }
+                if (awesomeValidation.validate()) {
+                    updateData();
+
+                }
             }
         });
     }
@@ -112,7 +127,6 @@ public class SignUp2Activity extends AppCompatActivity {
         alertDialogProfile = builder.create();
         alertDialogProfile.show();
         alertDialogProfile.setCancelable(true);
-
 
         dialogCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -214,38 +228,59 @@ public class SignUp2Activity extends AppCompatActivity {
     private void updateData() {
 
 
-
-        final String nickName1 = nickName.getText().toString().trim();
-        final String age1 = age.getText().toString();
-        final String about1 = about.getText().toString().trim();
-
-        RequestQueue requestQueue;
-        requestQueue = Volley.newRequestQueue(this);
-
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,URL,
-                null, new Response.Listener<JSONObject>() {
+        RequestQueue MyRequestQueue = Volley.newRequestQueue(this);
+        String url = Constants.SignUp;
+        StringRequest MyStringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
-            public void onResponse(JSONObject response) {
+            public void onResponse(String response) {
+                SignUpModel signUpModel = new SignUpModel();
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    String value = jsonObject.getString("code");
 
-                Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_LONG).show();
+                    if (value.equals("1")) {
+                        //JSONObject jsonObject1 = new JSONObject("payload");
+                        /*signUpModel.setSignUpUserName(jsonObject1.getString("user_name"));
+                        signUpModel.setSingupPassword(jsonObject1.getString("password"));*/
+
+                        Intent intent = new Intent(SignUp2Activity.this, LoginActivity.class);
+                        startActivity(intent);
+                        finish();
+
+                    } else if (value.equals("2")) {
+                        Toast.makeText(SignUp2Activity.this, value, Toast.LENGTH_SHORT).show();
+                    }
+
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Log.e("TAG", "onErrorResponse: " + error.toString());
                 Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_LONG).show();
             }
         }) {
             protected Map<String, String> getParams() {
+
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("nick_name", nickName1);
-                params.put("age", age1);
-                params.put("about", about1);
+                params.put("user_name", loginUserName);
+                params.put("email", loginEmail);
+                params.put("mobile", loginMobileNum);
+                params.put("password", loginPassword);
+                params.put("confirm_password", loginConfirmPass);
+                params.put("device_type", "A");
+                params.put("device_token", "BTC3UHfjR/hIv1IEALkXQ+wBZOVn33ixPbDFaSVQe6I=");
+                params.put("profile_img", "");
+                params.put("nick_name", loginNickName);
+                params.put("age", loginAge);
+                params.put("about", loginAbout);
+                params.put("tags_like", "");
                 return params;
             }
         };
-
-        requestQueue.add(jsonObjectRequest);
+        MyRequestQueue.add(MyStringRequest);
     }
-
-
 }

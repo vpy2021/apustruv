@@ -24,4 +24,6 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_account_tabitemspost">Account_tabitemspost</string>
+
+    <string name="login_status_preference">com.example.apustruv_login_status_preference</string>
 </resources>

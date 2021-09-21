@@ -1,10 +1,8 @@
 package com.example.apustruv.AdapterClass;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EdgeEffect;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -20,53 +18,64 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.DataViewHolder>  {
-     Context context;
-     List<CommentData>comment = new ArrayList<>();
-    public CommentAdapter(Context context, List<CommentData>comment) {
-        this.context = context;
-        this.comment = comment;
+public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.DataViewHolder> {
+
+    List<CommentData> commentList = new ArrayList<>();
+    int limit = 2;
+
+    public CommentAdapter() {
+
     }
 
     @NonNull
     @Override
     public DataViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.custom_comment, parent, false);
+        View view = layoutInflater.inflate(R.layout.adapter_comment_layout, parent, false);
         return new DataViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull DataViewHolder holder, int position) {
-        Picasso.get().load(comment.get(position).getProfileImage()).into(holder.commentProfilePhoto);
-        holder.commentProfileName.setText(comment.get(position).getProfileName());
-        holder.commentmsg.setText(comment.get(position).getCommentMessage());
-        holder.countDay.setText(comment.get(position).getCountTime());
+        try {
+            CommentData model = commentList.get(position);
+          //  Picasso.get().load(model.getProfileImg()).into(holder.commentProfilePhoto);
+            holder.commentProfileName.setText(model.getName());
+            holder.commentmsg.setText(model.getContent());
+            holder.countDay.setText(model.getCreatedTime());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
+    public void addItems(List<CommentData> dataList) {
+        commentList.clear();
+        commentList.addAll(dataList);
+        notifyDataSetChanged();
     }
 
     @Override
     public int getItemCount() {
-        return comment.size();
+        if(commentList.size()<=limit) {
+            return commentList.size();
+        }else{
+            return limit;
+        }
     }
 
     class DataViewHolder extends RecyclerView.ViewHolder {
 
-          ImageView commentProfilePhoto,ivSend;
-          TextView commentProfileName, commentmsg,countDay;
-          LinearLayout linearLayout;
-          EditText edtComment;
+        ImageView commentProfilePhoto;
+        TextView commentProfileName, commentmsg, countDay;
 
-       public DataViewHolder(@NonNull View itemView) {
-           super(itemView);
 
-           commentProfilePhoto = itemView.findViewById(R.id.commentStatusImageHome);
-           commentProfileName = itemView.findViewById(R.id.commentProfileNameID);
-           commentmsg = itemView.findViewById(R.id.commentMessageID);
-           countDay = itemView.findViewById(R.id.countDaysID);
-           linearLayout = itemView.findViewById(R.id.ll_action_coment_layout);
-           edtComment = itemView.findViewById(R.id.messageID);
-          // ivSend = itemView.findViewById(R.id.iv_send);
-       }
-   }
+        public DataViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            commentProfilePhoto = itemView.findViewById(R.id.commentStatusImageHome);
+            commentProfileName = itemView.findViewById(R.id.commentProfileNameID);
+            commentmsg = itemView.findViewById(R.id.commentMessageID);
+            countDay = itemView.findViewById(R.id.countDaysID);
+        }
+    }
 }

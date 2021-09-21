@@ -1,60 +1,85 @@
 package com.example.apustruv.Model;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class CommentData {
-    private String profileImage;
-    private String profileName;
-    private String commentMessage;
-    private String countTime;
-    private String postCommentTemp;
+    @SerializedName("id")
+    @Expose
+    private Integer id;
+    @SerializedName("post_id")
+    @Expose
+    private Integer postId;
+    @SerializedName("created_time")
+    @Expose
+    private String createdTime;
+    @SerializedName("user_id")
+    @Expose
+    private Integer userId;
+    @SerializedName("name")
+    @Expose
+    private String name;
+    @SerializedName("profile_img")
+    @Expose
+    private String profileImg;
+    @SerializedName("content")
+    @Expose
+    private String content;
 
-    public String getPostCommentTemp() {
-        return postCommentTemp;
+
+    public Integer getId() {
+        return id;
     }
 
-    public void setPostCommentTemp(String postComment) {
-        this.postCommentTemp = postComment;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getCountTime() {
-        return countTime;
+    public Integer getPostId() {
+        return postId;
     }
 
-    public void setCountTime(String countTime) {
-        this.countTime = countTime;
+    public void setPostId(Integer postId) {
+        this.postId = postId;
     }
 
-    public CommentData(){
-
-    }
-    CommentData(String profileImage, String profileName, String commentMessage){
-        this.profileImage = profileImage;
-        this.profileName = profileName;
-        this.commentMessage = commentMessage;
+    public String getCreatedTime() {
+        return createdTime;
     }
 
-    public String getProfileImage() {
-        return profileImage;
+    public void setCreatedTime(String createdTime) {
+        this.createdTime = createdTime;
     }
 
-    public void setProfileImage(String profileImage) {
-        this.profileImage = profileImage;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public String getProfileName() {
-        return profileName;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public void setProfileName(String profileName) {
-        this.profileName = profileName;
+    public String getName() {
+        return name;
     }
 
-    public String getCommentMessage() {
-        return commentMessage;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setCommentMessage(String commentMessage) {
-        this.commentMessage = commentMessage;
+    public String getProfileImg() {
+        return profileImg;
     }
 
+    public void setProfileImg(String profileImg) {
+        this.profileImg = profileImg;
+    }
 
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
 }

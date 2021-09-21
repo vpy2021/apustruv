@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/statusImageHome"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profileup"
+                    app:civ_border_color="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/profileNameID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Serndipity in love"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal|bold" />
+
+                <ImageView
+                    android:id="@+id/profileNamedotID"
+                    android:layout_width="@dimen/_4sdp"
+                    android:layout_height="@dimen/_4sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:src="@drawable/dotinhomelogo"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:id="@+id/followID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Follow"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reportDotID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_60sdp"
+                    android:text="..."
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:cardBackgroundColor="@color/bodycolor"
+                app:cardCornerRadius="@dimen/_25sdp">
+
+                <ImageView
+                    android:id="@+id/postImageID"
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:background="#F5F2EB"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/download"/>
+               <RelativeLayout
+                   android:layout_width="@dimen/_100sdp"
+                   android:layout_height="@dimen/_40sdp"
+                   android:layout_gravity="right"
+                   android:background="#ECF0F3"
+                   android:id="@+id/reportID"
+                   android:visibility="gone">
+
+                   <TextView
+                       android:layout_width="@dimen/_100sdp"
+                       android:layout_height="@dimen/_30sdp"
+                       android:layout_gravity="right"
+                       android:textColor="@color/black"
+                       android:layout_marginLeft="@dimen/_10sdp"
+                       android:text="Report Spam Sensitive Content" />
+
+
+               </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:alpha=".8"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/cornerbendlayout">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:src="@drawable/ndeem" />
+
+                    <TextView
+                        android:id="@+id/timeID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:text="11:07 AM"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textColorHighlight="@color/black"
+                        android:textColorHint="#151010"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dateID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:text="19 June 2021 AM"
+                        android:textColor="@color/white"
+                        android:textColorHighlight="@color/bodycolor"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="@dimen/_8sdp"
+                        android:textStyle="normal|bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/likeInc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="1,026"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/notesID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="notes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/commentIconID"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_70sdp"
+                android:src="@drawable/ic_commentupdate" />
+
+            <ImageView
+                android:id="@+id/shareID"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/ic_shareupdatedlogo"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/refreshID"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/ic_pathreferseogo" />
+
+            <com.like.LikeButton
+                android:id = "@+id/likeButtonHeart"
+                android:layout_gravity="center"
+                android:layout_width = "@dimen/_15sdp"
+                android:layout_height = "@dimen/_12sdp"
+                app:icon_type = "heart"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:circle_start_color = "#F5F2EB"
+                app:icon_size = "40dp"
+                app:like_drawable="@drawable/heart_on"
+                app:unlike_drawable="@drawable/hrt"
+                app:liked = "false"
+                app:anim_scale_factor = "2"
+                app:is_enabled = "true" />
+
+
+        </LinearLayout>
+
+
+
+        <include
+            layout="@layout/activity_comment_section_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>
