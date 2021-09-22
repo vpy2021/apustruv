@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -23,6 +24,7 @@ public class Account_setting2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_setting2);
 
+        Log.e("TAG", "onCreate: "+"");
        drag = (ImageView) findViewById(R.id.dragID);
 
         linearLayout = (LinearLayout) findViewById(R.id.dragDownLayoutID);
